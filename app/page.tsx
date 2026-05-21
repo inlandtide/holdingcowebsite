@@ -30,20 +30,16 @@ export default function Home() {
     <main className="page-shell">
       <Header />
 
-      <section className="relative flex min-h-screen items-center justify-center px-4 pb-16 pt-36 md:px-10 md:pb-20 md:pt-40">
-        <h1 className="sr-only">
-          Inland Tide Holdings is built in St. Louis and focused on acquisitions, advisory, and venture opportunities.
-        </h1>
-        <div className="mx-auto w-full max-w-7xl">
-          <Image
-            src="/brand/inland-tide-hero-card.png"
-            alt="Inland Tide Holdings — Acquisitions, Advisory, Venture — Built in St. Louis"
-            width={1290}
-            height={1094}
-            priority
-            className="mx-auto h-auto w-full object-contain"
-          />
-        </div>
+      <section className="relative flex min-h-screen items-center justify-center px-6 pt-28 md:px-10 md:pt-32">
+        <h1 className="sr-only">Inland Tide Holdings</h1>
+        <Image
+          src="/brand/inland-tide-logo-inverted.svg"
+          alt="Inland Tide Holdings"
+          width={760}
+          height={270}
+          priority
+          className="h-auto w-full max-w-[720px]"
+        />
       </section>
 
       <section className="light-section px-6 py-20 md:px-10 md:py-28">

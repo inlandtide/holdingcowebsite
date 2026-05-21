@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
+- Replaced the homepage above-the-fold hero with a minimal main full-logo-only hero beneath the menu.
 - Updated the homepage hero to feature the uploaded Inland Tide artwork as the primary hero visual.
 - Refocused homepage, about, portfolio, metadata, footer, and README language around manufacturing, construction, and seafood acquisition opportunities.
 - Updated metadata and README site structure to reflect the completed multi-page website.
