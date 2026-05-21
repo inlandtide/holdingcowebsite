@@ -257,9 +257,6 @@ export default function Home() {
           &copy; {new Date().getFullYear()} Inland Tide Holdings. All rights reserved.
         </p>
       </footer>
-
-      {/* Connector test */}
-      <p className="mt-4 text-xs" style={{ color: "var(--muted)" }}>hello world</p>
     </main>
   );
 }
