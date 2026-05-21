@@ -30,10 +30,10 @@ export default function Home() {
     <main className="page-shell">
       <Header />
 
-      <section className="relative flex min-h-screen items-center justify-center px-6 pt-28 md:px-10 md:pt-32">
+      <section className="light-section relative flex min-h-screen items-center justify-center px-6 pt-28 md:px-10 md:pt-32">
         <h1 className="sr-only">Inland Tide Holdings</h1>
         <Image
-          src="/brand/inland-tide-logo-inverted.svg"
+          src="/brand/inland-tide-logo-full-color.svg"
           alt="Inland Tide Holdings"
           width={760}
           height={270}
