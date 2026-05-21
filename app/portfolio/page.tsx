@@ -20,20 +20,20 @@ const portfolioItems = [
 
 const criteria = [
   {
-    title: "Industry Fit",
-    copy: "Manufacturing, Industrial, and Distribution companies where operational improvements and long-term stewardship can compound value.",
+    title: "Manufacturing",
+    copy: "Stable manufacturing companies with practical products, capable teams, repeat customers, and opportunities to improve systems while protecting the company’s existing legacy.",
   },
   {
-    title: "Ownership Context",
-    copy: "Founder-led or owner-operated companies seeking succession, continuity, or a partner capable of protecting what has already been built.",
+    title: "Construction",
+    copy: "Construction and construction-adjacent companies with strong reputations, reliable execution, and durable local or regional demand.",
   },
   {
-    title: "Business Quality",
-    copy: "Stable, profitable businesses with loyal customers, dependable teams, and practical opportunities for modernization.",
+    title: "Seafood",
+    copy: "Seafood processing, distribution, specialty supply, and related businesses where patient ownership can support continuity and long-term growth.",
   },
   {
-    title: "Partnership Alignment",
-    copy: "Advisory and venture relationships where capital, expertise, and incentives are structured for shared long-term outcomes.",
+    title: "Open Opportunities",
+    copy: "We are always open to hearing about new and potential acquisition opportunities, including off-market situations and owner-led succession conversations.",
   },
 ];
 
@@ -42,9 +42,9 @@ export default function PortfolioPage() {
     <main className="page-shell">
       <Header />
       <PageIntro
-        eyebrow="Portfolio"
-        title="A growing collection of durable companies and aligned partnerships."
-        copy="Inland Tide Holdings is building a long-term portfolio anchored in St. Louis, practical operations, and patient value creation."
+        eyebrow="Portfolio & Acquisition Focus"
+        title="Building a long-term portfolio through focused acquisitions."
+        copy="Inland Tide Holdings is actively seeking manufacturing, construction, and seafood acquisition opportunities while continuing to build a portfolio anchored in practical operations and patient ownership."
       />
 
       <section className="light-section px-6 py-20 md:px-10 md:py-28">
@@ -57,7 +57,7 @@ export default function PortfolioPage() {
               </h2>
             </div>
             <p className="text-lg leading-8 slate-text">
-              Our portfolio will grow carefully. We prioritize businesses where active ownership, operational systems, and founder-respecting transitions can produce durable outcomes for employees, customers, and communities.
+              Our portfolio will grow carefully. We prioritize acquisition opportunities where active ownership, operational systems, and founder-respecting transitions can produce durable outcomes for employees, customers, and communities.
             </p>
           </div>
 
@@ -85,9 +85,9 @@ export default function PortfolioPage() {
       <section className="px-6 py-20 md:px-10 md:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
-            <Eyebrow>Investment Criteria</Eyebrow>
+            <Eyebrow>Acquisition Criteria</Eyebrow>
             <h2 className="brand-display mt-5 text-5xl font-semibold leading-none md:text-6xl">
-              What we look for in a partnership.
+              What we are actively looking to acquire.
             </h2>
           </div>
           <div className="mt-14 grid gap-6 md:grid-cols-2">
@@ -106,13 +106,13 @@ export default function PortfolioPage() {
         <div className="mx-auto max-w-5xl text-center">
           <Eyebrow>Opportunities</Eyebrow>
           <h2 className="brand-display mt-5 text-5xl font-semibold leading-none md:text-6xl">
-            Know a business ready for its next chapter?
+            Know a manufacturing, construction, or seafood business ready for its next chapter?
           </h2>
           <p className="mx-auto mt-7 max-w-3xl text-lg leading-8 slate-text">
-            We welcome conversations with owners, advisors, founders, and investors who value confidentiality, clarity, and long-term thinking.
+            We welcome conversations with owners, advisors, brokers, founders, and referral partners who value confidentiality, clarity, and long-term thinking.
           </p>
           <Link href="/#contact" className="mt-10 inline-flex border px-7 py-4 text-xs font-semibold uppercase tracking-[0.22em]" style={{ background: "var(--tide-gold)", borderColor: "var(--tide-gold)", color: "var(--inland-navy)" }}>
-            Start a Conversation
+            Share an Opportunity
           </Link>
         </div>
       </section>

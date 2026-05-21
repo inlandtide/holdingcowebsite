@@ -26,9 +26,9 @@ The site is a polished multi-page company website for Inland Tide Holdings, buil
 
 | Page | Route | Purpose |
 | :--- | :--- | :--- |
-| Home | `/` | Brand-led overview of Inland Tide Holdings, core focus areas, operator perspective, and contact form. |
-| About | `/about` | Company perspective, partner biographies for Tim Hebel and Ryan Hall, and operating values. |
-| Portfolio | `/portfolio` | Current and forthcoming portfolio details, investment criteria, and opportunity call-to-action. |
+| Home | `/` | Brand-led hero using the approved Inland Tide artwork, acquisition target overview, opportunity messaging, and contact form. |
+| About | `/about` | Company perspective, partner biographies for Tim Hebel and Ryan Hall, and acquisition-oriented operating values. |
+| Portfolio | `/portfolio` | Current and forthcoming portfolio details, manufacturing/construction/seafood acquisition criteria, and opportunity call-to-action. |
 
 ## Integrations & Data Flow
 

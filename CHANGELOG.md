@@ -7,8 +7,11 @@ All notable changes to this project will be documented in this file.
 - Built the full Inland Tide Holdings website with homepage, about page, and portfolio page.
 - Added approved Inland Tide logo assets from the uploaded brand package under `/public/brand`.
 - Added shared site chrome, contact form, brand-aligned styling, and partner/portfolio content.
+- Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
+- Updated the homepage hero to feature the uploaded Inland Tide artwork as the primary hero visual.
+- Refocused homepage, about, portfolio, metadata, footer, and README language around manufacturing, construction, and seafood acquisition opportunities.
 - Updated metadata and README site structure to reflect the completed multi-page website.
 - Removed the previous "hello world" connector test from the rendered site.
 

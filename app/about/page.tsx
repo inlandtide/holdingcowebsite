@@ -20,7 +20,7 @@ const values = [
   "Preserve the legacy of founder-led businesses.",
   "Operate with aligned incentives and direct accountability.",
   "Use modern technology where it strengthens durable fundamentals.",
-  "Build a portfolio that benefits employees, customers, founders, and communities.",
+  "Build a portfolio in manufacturing, construction, seafood, and related operating businesses that benefits employees, customers, founders, and communities.",
 ];
 
 export default function AboutPage() {
@@ -46,7 +46,7 @@ export default function AboutPage() {
               Inland Tide is a private investment and holding company focused on long-term value creation through direct acquisitions, strategic partnerships, and venture capital. We partner with established businesses and high-growth startups to provide the operational expertise and capital necessary for their next chapter.
             </p>
             <p>
-              Our focus is intentionally practical: stable, profitable businesses in Manufacturing, Industrial, and Distribution; select advisory relationships where equity alignment creates shared outcomes; and venture opportunities where technology, mentorship, and disciplined execution can help founders scale efficiently.
+              Our focus is intentionally practical: stable, profitable businesses in manufacturing, construction, and seafood; select advisory relationships where equity alignment creates shared outcomes; and acquisition opportunities where patient ownership, modern systems, and disciplined execution can support continuity and long-term growth.
             </p>
           </div>
         </div>
@@ -79,10 +79,10 @@ export default function AboutPage() {
           <div>
             <Eyebrow>Operating Values</Eyebrow>
             <h2 className="brand-display mt-5 text-5xl font-semibold leading-none md:text-6xl">
-              The standards behind every partnership.
+              The standards behind every acquisition conversation.
             </h2>
             <Link href="/portfolio" className="mt-10 inline-flex border px-7 py-4 text-xs font-semibold uppercase tracking-[0.22em]" style={{ borderColor: "var(--tide-gold)", color: "var(--inland-navy)" }}>
-              View Portfolio
+              View Acquisition Focus
             </Link>
           </div>
           <div className="grid gap-4">

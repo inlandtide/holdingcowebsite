@@ -35,7 +35,7 @@ export function Header() {
           className="hidden border px-5 py-3 text-xs font-medium uppercase tracking-[0.18em] transition md:inline-flex"
           style={{ borderColor: "var(--tide-gold)", color: "var(--tide-gold)" }}
         >
-          Start a Conversation
+          Share an Opportunity
         </Link>
       </div>
     </header>
@@ -55,7 +55,7 @@ export function Footer() {
             className="h-16 w-auto"
           />
           <p className="mt-6 max-w-md text-sm leading-7" style={{ color: "var(--parchment)" }}>
-            Inland Tide Holdings is a St. Louis private investment and holding company focused on durable businesses, aligned partnerships, and long-term value creation.
+            Inland Tide Holdings is a St. Louis private investment and holding company actively seeking manufacturing, construction, and seafood acquisition opportunities.
           </p>
         </div>
         <div>
@@ -71,13 +71,13 @@ export function Footer() {
         <div>
           <p className="text-xs uppercase tracking-[0.24em] gold-text">Headquarters</p>
           <p className="mt-5 text-sm leading-7" style={{ color: "var(--parchment)" }}>
-            Built in St. Louis by operators who believe in preserving legacy while creating the next chapter of growth.
+            Built in St. Louis by operators who are always open to hearing about new and potential business acquisition opportunities.
           </p>
         </div>
       </div>
       <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-3 border-t pt-6 text-xs uppercase tracking-[0.18em] md:flex-row md:items-center md:justify-between" style={{ borderColor: "var(--tide-gold)", color: "var(--parchment)" }}>
         <p>&copy; {new Date().getFullYear()} Inland Tide Holdings. All rights reserved.</p>
-        <p>Acquisitions · Advisory · Venture</p>
+        <p>Manufacturing · Construction · Seafood</p>
       </div>
     </footer>
   );
