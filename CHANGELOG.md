@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
+- Switched the homepage hero back to the Inland Navy blue background, used the dark-background logo version, and kept the “Acquisitions | Advisory | Venture” tagline.
 - Tested a reverse-color homepage hero treatment using the full-color logo on a light hero background while keeping the menu blue.
 - Replaced the homepage above-the-fold hero with a minimal main full-logo-only hero beneath the menu.
 - Updated the homepage hero to feature the uploaded Inland Tide artwork as the primary hero visual.

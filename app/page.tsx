@@ -30,11 +30,11 @@ export default function Home() {
     <main className="page-shell">
       <Header />
 
-      <section className="light-section relative flex min-h-screen items-center justify-center px-6 pt-28 md:px-10 md:pt-32">
+      <section className="relative flex min-h-screen items-center justify-center px-6 pt-28 md:px-10 md:pt-32" style={{ background: "var(--inland-navy)" }}>
         <div className="flex flex-col items-center text-center">
           <h1 className="sr-only">Inland Tide Holdings</h1>
           <Image
-            src="/brand/inland-tide-logo-full-color.svg"
+            src="/brand/inland-tide-logo-inverted.svg"
             alt="Inland Tide Holdings"
             width={760}
             height={270}
@@ -42,7 +42,7 @@ export default function Home() {
             className="h-auto w-full max-w-[720px]"
           />
           <div className="gold-rule mt-10 w-24" />
-          <p className="brand-display mt-8 text-3xl font-semibold tracking-wide md:text-5xl" style={{ color: "var(--inland-navy)" }}>
+          <p className="brand-display mt-8 text-3xl font-semibold tracking-wide md:text-5xl" style={{ color: "var(--arch-white)" }}>
             Acquisitions | Advisory | Venture
           </p>
         </div>
