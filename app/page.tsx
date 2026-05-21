@@ -41,13 +41,18 @@ export default function Home() {
             priority
             className="h-auto w-full max-w-[720px]"
           />
-          <div className="gold-rule mt-10 w-24" />
-          <p className="brand-display mt-8 text-3xl font-semibold tracking-wide md:text-5xl" style={{ color: "var(--arch-white)" }}>
-            Acquisitions | Advisory | Venture
-          </p>
         </div>
       </section>
-
+      <section className="border-y" style={{ background: "var(--inland-navy)", borderColor: "var(--tide-gold)" }}>
+        <div className="mx-auto grid max-w-7xl md:grid-cols-3">
+          {["Acquisitions", "Advisory", "Venture"].map((item) => (
+            <div key={item} className="flex items-center justify-center gap-3 border-t px-6 py-7 text-center md:border-l md:border-t-0 first:md:border-l-0" style={{ borderColor: "var(--tide-gold)" }}>
+              <span className="text-sm gold-text">◆</span>
+              <p className="text-xs font-semibold uppercase tracking-[0.28em]" style={{ color: "var(--arch-white)" }}>{item}</p>
+            </div>
+          ))}
+        </div>
+      </section>
       <section className="light-section px-6 py-20 md:px-10 md:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
