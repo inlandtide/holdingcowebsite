@@ -31,15 +31,21 @@ export default function Home() {
       <Header />
 
       <section className="light-section relative flex min-h-screen items-center justify-center px-6 pt-28 md:px-10 md:pt-32">
-        <h1 className="sr-only">Inland Tide Holdings</h1>
-        <Image
-          src="/brand/inland-tide-logo-full-color.svg"
-          alt="Inland Tide Holdings"
-          width={760}
-          height={270}
-          priority
-          className="h-auto w-full max-w-[720px]"
-        />
+        <div className="flex flex-col items-center text-center">
+          <h1 className="sr-only">Inland Tide Holdings</h1>
+          <Image
+            src="/brand/inland-tide-logo-full-color.svg"
+            alt="Inland Tide Holdings"
+            width={760}
+            height={270}
+            priority
+            className="h-auto w-full max-w-[720px]"
+          />
+          <div className="gold-rule mt-10 w-24" />
+          <p className="brand-display mt-8 text-3xl font-semibold tracking-wide md:text-5xl" style={{ color: "var(--inland-navy)" }}>
+            Acquisitions | Advisory | Venture
+          </p>
+        </div>
       </section>
 
       <section className="light-section px-6 py-20 md:px-10 md:py-28">

@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## [2026-05-21]
 ### Added
+- Added “Acquisitions | Advisory | Venture” directly beneath the homepage hero logo.
 - Built the full Inland Tide Holdings website with homepage, about page, and portfolio page.
 - Added approved Inland Tide logo assets from the uploaded brand package under `/public/brand`.
 - Added shared site chrome, contact form, brand-aligned styling, and partner/portfolio content.
