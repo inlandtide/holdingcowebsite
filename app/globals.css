@@ -1,25 +1,152 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0B1A2B;
-  --foreground: #F5F1EA;
-  --accent: #B4904E;
-  --accent-light: #D4B07A;
-  --surface: #132236;
-  --muted: #8A9BAD;
+  --inland-navy: #1B2A4A;
+  --tide-gold: #C9A84C;
+  --arch-white: #FFFFFF;
+  --parchment: #F5F0E8;
+  --river-slate: #4A5568;
+  --background: var(--inland-navy);
+  --foreground: var(--arch-white);
+  --accent: var(--tide-gold);
+  --surface: var(--parchment);
+  --muted: var(--river-slate);
+  --font-display: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-body: Helvetica, Arial, sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
-  --color-accent-light: var(--accent-light);
   --color-surface: var(--surface);
   --color-muted: var(--muted);
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-body);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: var(--tide-gold);
+  color: var(--inland-navy);
+}
+
+.brand-display {
+  font-family: var(--font-display);
+}
+
+.body-copy {
+  font-family: var(--font-body);
+}
+
+.gold-rule {
+  height: 1px;
+  background: var(--tide-gold);
+}
+
+.gold-border {
+  border: 1px solid var(--tide-gold);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 1px;
+  background: var(--tide-gold);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 180ms ease;
+}
+
+.nav-link:hover::after,
+.nav-link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.page-shell {
+  min-height: 100vh;
+  background: var(--inland-navy);
+  color: var(--arch-white);
+}
+
+.light-section {
+  background: var(--parchment);
+  color: var(--inland-navy);
+}
+
+.slate-text {
+  color: var(--river-slate);
+}
+
+.gold-text {
+  color: var(--tide-gold);
+}
+
+.focus-card {
+  border: 1px solid var(--tide-gold);
+  background: transparent;
+}
+
+.form-field {
+  width: 100%;
+  border: 1px solid var(--tide-gold);
+  background: var(--inland-navy);
+  color: var(--arch-white);
+  outline: none;
+  border-radius: 0;
+}
+
+.form-field::placeholder {
+  color: var(--parchment);
+}
+
+.form-field:focus {
+  border-color: var(--arch-white);
+}
+
+.form-field-light {
+  width: 100%;
+  border: 1px solid var(--tide-gold);
+  background: var(--arch-white);
+  color: var(--inland-navy);
+  outline: none;
+  border-radius: 0;
+}
+
+.form-field-light::placeholder {
+  color: var(--river-slate);
+}
+
+.form-field-light:focus {
+  border-color: var(--inland-navy);
 }

@@ -16,17 +16,19 @@ This project is built using modern, serverless web technologies designed for hig
 * **Framework:** Next.js 16 using the App Router.
 * **Language:** TypeScript.
 * **Styling:** Tailwind CSS v4 plus raw CSS variables in `app/globals.css`.
-* **Fonts:** Cormorant Garamond for headlines and default serif fallbacks for body text.
+* **Fonts:** Cormorant Garamond for headlines and display use, Helvetica/Arial for body copy and interface text.
 * **Hosting:** Vercel.
 * **Deployment:** Continuous deployment is configured. Any push to the `main` branch on GitHub automatically triggers a build and deployment on Vercel.
 
 ## Site Structure
 
-Currently, the site is a single "Coming Soon" landing page designed to capture contact information while the full holding company site is being planned.
+The site is a polished multi-page company website for Inland Tide Holdings, built around the approved brand system and the existing contact form workflow.
 
 | Page | Route | Purpose |
 | :--- | :--- | :--- |
-| Home | `/` | Minimalist landing page with branding and a contact form. |
+| Home | `/` | Brand-led overview of Inland Tide Holdings, core focus areas, operator perspective, and contact form. |
+| About | `/about` | Company perspective, partner biographies for Tim Hebel and Ryan Hall, and operating values. |
+| Portfolio | `/portfolio` | Current and forthcoming portfolio details, investment criteria, and opportunity call-to-action. |
 
 ## Integrations & Data Flow
 

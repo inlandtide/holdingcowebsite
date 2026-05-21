@@ -1,262 +1,141 @@
-"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { ContactForm } from "./components/ContactForm";
+import { Eyebrow, Footer, Header } from "./components/SiteChrome";
 
-import { useState } from "react";
+const focusAreas = [
+  {
+    title: "Acquisitions",
+    copy: "Majority investments in stable Manufacturing, Distribution, and Industrial companies where dedicated operators can preserve legacy and unlock disciplined growth.",
+  },
+  {
+    title: "Strategic Advisory",
+    copy: "Hands-on executive support for high-potential firms, aligning operational expertise with equity-based outcomes and long-term enterprise health.",
+  },
+  {
+    title: "Venture & Growth Capital",
+    copy: "Capital and mentorship for founders building scalable companies, especially where technology and modern operating systems create an advantage.",
+  },
+];
+
+const principles = ["Buy and hold discipline", "Operator-led ownership", "St. Louis-rooted perspective", "Modern systems for enduring companies"];
 
 export default function Home() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
-  const [errorMessage, setErrorMessage] = useState("");
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus("submitting");
-    setErrorMessage("");
-
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      if (res.ok) {
-        setStatus("success");
-        setFormData({ name: "", email: "", phone: "", message: "" });
-      } else {
-        const data = await res.json();
-        setStatus("error");
-        setErrorMessage(data.error || "Something went wrong. Please try again.");
-      }
-    } catch {
-      setStatus("error");
-      setErrorMessage("Network error. Please check your connection and try again.");
-    }
-  };
-
   return (
-    <main
-      className="min-h-screen flex flex-col items-center justify-center px-6 py-16"
-      style={{ background: "var(--background)" }}
-    >
-      {/* Logo / Wordmark */}
-      <div className="mb-10 text-center">
-        <p
-          className="text-xs tracking-[0.35em] uppercase mb-3"
-          style={{ color: "var(--accent)", fontFamily: "var(--font-cormorant), Georgia, serif" }}
-        >
-          Est. 2024
-        </p>
-        <h1
-          className="text-5xl md:text-7xl font-light tracking-wide"
-          style={{
-            color: "var(--foreground)",
-            fontFamily: "var(--font-cormorant), Georgia, serif",
-            letterSpacing: "0.06em",
-          }}
-        >
-          Inland Tide Holdings
-        </h1>
-        <div
-          className="mx-auto mt-5 mb-5"
-          style={{ width: "60px", height: "1px", background: "var(--accent)" }}
-        />
-        <p
-          className="text-lg md:text-xl font-light tracking-widest uppercase"
-          style={{ color: "var(--muted)", fontFamily: "var(--font-cormorant), Georgia, serif" }}
-        >
-          Coming Soon
-        </p>
-      </div>
+    <main className="page-shell">
+      <Header />
 
-      {/* Divider */}
-      <div
-        className="w-full max-w-md mb-12"
-        style={{ height: "1px", background: "var(--surface)" }}
-      />
-
-      {/* Contact Form */}
-      <section className="w-full max-w-md">
-        <h2
-          className="text-2xl font-light text-center mb-2 tracking-wide"
-          style={{ color: "var(--foreground)", fontFamily: "var(--font-cormorant), Georgia, serif" }}
-        >
-          Get in Touch
-        </h2>
-        <p
-          className="text-sm text-center mb-8 tracking-wide"
-          style={{ color: "var(--muted)" }}
-        >
-          {"We'd love to hear from you. Leave your details and we'll be in touch."}
-        </p>
-
-        {status === "success" ? (
-          <div
-            className="rounded-sm px-6 py-8 text-center"
-            style={{ background: "var(--surface)", border: "1px solid var(--accent)" }}
-          >
-            <p
-              className="text-xl font-light mb-2"
-              style={{ color: "var(--accent)", fontFamily: "var(--font-cormorant), Georgia, serif" }}
-            >
-              Message Received
+      <section className="relative px-6 pb-20 pt-44 md:px-10 md:pb-28 md:pt-56">
+        <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
+          <div>
+            <Eyebrow>Private Investment & Holding Company</Eyebrow>
+            <h1 className="brand-display mt-7 max-w-5xl text-6xl font-semibold leading-[0.95] tracking-wide md:text-8xl">
+              Long-term capital for the next chapter of enduring businesses.
+            </h1>
+            <div className="gold-rule my-8 w-28" />
+            <p className="max-w-2xl text-lg leading-8" style={{ color: "var(--parchment)" }}>
+              Inland Tide Holdings partners with established businesses and high-growth startups through direct acquisitions, strategic advisory, and venture capital. We bring operator experience, patient capital, and a St. Louis-born commitment to building durable value.
             </p>
-            <p className="text-sm" style={{ color: "var(--muted)" }}>
-              Thank you for reaching out. We will be in touch shortly.
-            </p>
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+              <Link href="/#contact" className="border px-7 py-4 text-center text-xs font-semibold uppercase tracking-[0.22em]" style={{ background: "var(--tide-gold)", borderColor: "var(--tide-gold)", color: "var(--inland-navy)" }}>
+                Start a Conversation
+              </Link>
+              <Link href="/about" className="border px-7 py-4 text-center text-xs font-semibold uppercase tracking-[0.22em]" style={{ borderColor: "var(--tide-gold)", color: "var(--tide-gold)" }}>
+                Our Story
+              </Link>
+            </div>
           </div>
-        ) : (
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-            <div>
-              <label
-                htmlFor="name"
-                className="block text-xs tracking-widest uppercase mb-1"
-                style={{ color: "var(--muted)" }}
-              >
-                Name <span style={{ color: "var(--accent)" }}>*</span>
-              </label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                required
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="Your full name"
-                className="w-full px-4 py-3 text-sm outline-none transition-all"
-                style={{
-                  background: "var(--surface)",
-                  color: "var(--foreground)",
-                  border: "1px solid #1E3450",
-                  borderRadius: "2px",
-                }}
-                onFocus={(e) => (e.currentTarget.style.borderColor = "var(--accent)")}
-                onBlur={(e) => (e.currentTarget.style.borderColor = "#1E3450")}
-              />
-            </div>
 
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-xs tracking-widest uppercase mb-1"
-                style={{ color: "var(--muted)" }}
-              >
-                Email <span style={{ color: "var(--accent)" }}>*</span>
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="your@email.com"
-                className="w-full px-4 py-3 text-sm outline-none transition-all"
-                style={{
-                  background: "var(--surface)",
-                  color: "var(--foreground)",
-                  border: "1px solid #1E3450",
-                  borderRadius: "2px",
-                }}
-                onFocus={(e) => (e.currentTarget.style.borderColor = "var(--accent)")}
-                onBlur={(e) => (e.currentTarget.style.borderColor = "#1E3450")}
+          <div className="gold-border p-6 md:p-10">
+            <div className="border p-8 md:p-10" style={{ borderColor: "var(--tide-gold)" }}>
+              <Image
+                src="/brand/inland-tide-logo-inverted.svg"
+                alt="Inland Tide Holdings"
+                width={320}
+                height={114}
+                priority
+                className="mx-auto h-28 w-auto md:h-36"
               />
-            </div>
-
-            <div>
-              <label
-                htmlFor="phone"
-                className="block text-xs tracking-widest uppercase mb-1"
-                style={{ color: "var(--muted)" }}
-              >
-                Phone
-              </label>
-              <input
-                id="phone"
-                name="phone"
-                type="tel"
-                value={formData.phone}
-                onChange={handleChange}
-                placeholder="(optional)"
-                className="w-full px-4 py-3 text-sm outline-none transition-all"
-                style={{
-                  background: "var(--surface)",
-                  color: "var(--foreground)",
-                  border: "1px solid #1E3450",
-                  borderRadius: "2px",
-                }}
-                onFocus={(e) => (e.currentTarget.style.borderColor = "var(--accent)")}
-                onBlur={(e) => (e.currentTarget.style.borderColor = "#1E3450")}
-              />
-            </div>
-
-            <div>
-              <label
-                htmlFor="message"
-                className="block text-xs tracking-widest uppercase mb-1"
-                style={{ color: "var(--muted)" }}
-              >
-                Message <span style={{ color: "var(--accent)" }}>*</span>
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                required
-                rows={5}
-                value={formData.message}
-                onChange={handleChange}
-                placeholder="How can we help you?"
-                className="w-full px-4 py-3 text-sm outline-none transition-all resize-none"
-                style={{
-                  background: "var(--surface)",
-                  color: "var(--foreground)",
-                  border: "1px solid #1E3450",
-                  borderRadius: "2px",
-                }}
-                onFocus={(e) => (e.currentTarget.style.borderColor = "var(--accent)")}
-                onBlur={(e) => (e.currentTarget.style.borderColor = "#1E3450")}
-              />
-            </div>
-
-            {status === "error" && (
-              <p className="text-xs text-center" style={{ color: "#E57373" }}>
-                {errorMessage}
+              <div className="gold-rule mx-auto my-8 w-20" />
+              <p className="brand-display text-center text-3xl font-semibold leading-tight md:text-4xl">
+                Acquisitions · Advisory · Venture
               </p>
-            )}
-
-            <button
-              type="submit"
-              disabled={status === "submitting"}
-              className="w-full py-3 text-xs tracking-widest uppercase font-medium transition-all disabled:opacity-50"
-              style={{
-                background: "var(--accent)",
-                color: "var(--background)",
-                borderRadius: "2px",
-                letterSpacing: "0.2em",
-              }}
-            >
-              {status === "submitting" ? "Sending..." : "Send Message"}
-            </button>
-          </form>
-        )}
+              <p className="mt-6 text-center text-sm uppercase tracking-[0.24em] gold-text">
+                Built in St. Louis
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      {/* Footer */}
-      <footer className="mt-16 text-center">
-        <p className="text-xs tracking-widest" style={{ color: "var(--muted)" }}>
-          &copy; {new Date().getFullYear()} Inland Tide Holdings. All rights reserved.
-        </p>
-      </footer>
+      <section className="light-section px-6 py-20 md:px-10 md:py-28">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+            <div>
+              <Eyebrow>Core Focus Areas</Eyebrow>
+              <h2 className="brand-display mt-5 text-5xl font-semibold leading-none md:text-6xl">
+                Built for continuity, scale, and thoughtful growth.
+              </h2>
+            </div>
+            <p className="text-lg leading-8 slate-text">
+              We are focused on companies where operational depth matters: owner-operated businesses seeking continuity, select organizations ready for aligned advisory support, and founders who benefit from capital plus practical mentorship.
+            </p>
+          </div>
+          <div className="mt-14 grid gap-6 md:grid-cols-3">
+            {focusAreas.map((area) => (
+              <article key={area.title} className="focus-card p-8">
+                <p className="text-xs uppercase tracking-[0.24em] gold-text">Focus</p>
+                <h3 className="brand-display mt-5 text-4xl font-semibold">{area.title}</h3>
+                <p className="mt-5 text-sm leading-7 slate-text">{area.copy}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-20 md:px-10 md:py-28">
+        <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[1fr_1fr] lg:items-center">
+          <div className="gold-border p-8 md:p-12">
+            <Eyebrow>Operator Perspective</Eyebrow>
+            <h2 className="brand-display mt-5 text-5xl font-semibold leading-none md:text-6xl">
+              We know what it means to build, lead, and exit a company.
+            </h2>
+            <p className="mt-8 text-lg leading-8" style={{ color: "var(--parchment)" }}>
+              Inland Tide was founded by Tim Hebel and Ryan Hall after helping lead Beanstalk Web Solutions to a successful exit in 2026. The firm exists to apply that operating experience to traditional companies, growth ventures, and partnerships where aligned incentives matter.
+            </p>
+            <Link href="/about" className="mt-10 inline-flex border px-7 py-4 text-xs font-semibold uppercase tracking-[0.22em]" style={{ borderColor: "var(--tide-gold)", color: "var(--tide-gold)" }}>
+              Meet the Partners
+            </Link>
+          </div>
+          <div className="grid gap-4">
+            {principles.map((principle, index) => (
+              <div key={principle} className="flex items-center gap-6 border p-6" style={{ borderColor: "var(--tide-gold)" }}>
+                <span className="brand-display text-4xl font-semibold gold-text">0{index + 1}</span>
+                <p className="text-sm font-medium uppercase tracking-[0.2em]">{principle}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="light-section px-6 py-20 md:px-10 md:py-28">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr]">
+          <div>
+            <Eyebrow>Contact</Eyebrow>
+            <h2 className="brand-display mt-5 text-5xl font-semibold leading-none md:text-6xl">
+              Let’s discuss the next chapter.
+            </h2>
+            <p className="mt-7 text-lg leading-8 slate-text">
+              Whether you are considering succession, seeking an operating partner, exploring advisory alignment, or building a company that needs capital and mentorship, we welcome thoughtful conversations.
+            </p>
+          </div>
+          <div className="gold-border bg-white p-6 md:p-10">
+            <ContactForm variant="light" />
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </main>
   );
 }

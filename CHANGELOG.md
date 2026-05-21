@@ -3,8 +3,14 @@
 All notable changes to this project will be documented in this file.
 
 ## [2026-05-21]
+### Added
+- Built the full Inland Tide Holdings website with homepage, about page, and portfolio page.
+- Added approved Inland Tide logo assets from the uploaded brand package under `/public/brand`.
+- Added shared site chrome, contact form, brand-aligned styling, and partner/portfolio content.
+
 ### Changed
-- Added "hello world" below the footer as a GitHub connector test.
+- Updated metadata and README site structure to reflect the completed multi-page website.
+- Removed the previous "hello world" connector test from the rendered site.
 
 ## [2026-05-20]
 ### Added

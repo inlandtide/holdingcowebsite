@@ -10,8 +10,9 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Inland Tide Holdings",
-  description: "Inland Tide Holdings — Coming Soon",
+  title: "Inland Tide Holdings | Private Investment & Holding Company",
+  description:
+    "Inland Tide Holdings is a St. Louis private investment and holding company focused on acquisitions, strategic advisory, and venture capital.",
 };
 
 export default function RootLayout({
