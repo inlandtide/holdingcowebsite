@@ -30,7 +30,7 @@ export default function Home() {
     <main className="page-shell">
       <Header />
 
-      <section className="relative flex min-h-screen items-center justify-center px-6 pt-28 md:px-10 md:pt-32" style={{ background: "var(--inland-navy)" }}>
+      <section className="relative flex min-h-[94vh] items-center justify-center px-6 pb-24 pt-28 md:px-10 md:pb-28 md:pt-32" style={{ background: "var(--inland-navy)" }}>
         <div className="flex flex-col items-center text-center">
           <h1 className="sr-only">Inland Tide Holdings</h1>
           <Image
@@ -48,8 +48,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-6 pb-20 md:px-10 md:pb-28" style={{ background: "var(--inland-navy)" }}>
-        <div className="light-section gold-border mx-auto max-w-7xl px-6 py-14 md:px-10 md:py-16">
+      <section className="light-section relative -mt-16 border-t px-6 pb-20 pt-28 md:-mt-20 md:px-10 md:pb-28 md:pt-32" style={{ borderColor: "var(--tide-gold)" }}>
+        <div className="mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
             <div>
               <Eyebrow>Acquisition Targets</Eyebrow>

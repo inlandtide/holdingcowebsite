@@ -11,7 +11,7 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
-- Smoothed the transition from the blue hero into the acquisition targets section by placing the light content inside a bordered parchment panel on the continued navy background.
+- Reverted the bordered-panel hero transition experiment and replaced it with a cleaner overlapping light section with a Tide Gold top rule.
 - Reverted the previous hero transition cleanup, restoring “Acquisitions | Advisory | Venture” directly beneath the hero logo.
 - Switched the homepage hero back to the Inland Navy blue background, used the dark-background logo version, and kept the “Acquisitions | Advisory | Venture” tagline.
 - Tested a reverse-color homepage hero treatment using the full-color logo on a light hero background while keeping the menu blue.
