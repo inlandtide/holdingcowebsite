@@ -48,8 +48,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="light-section px-6 py-20 md:px-10 md:py-28">
-        <div className="mx-auto max-w-7xl">
+      <section className="px-6 pb-20 md:px-10 md:pb-28" style={{ background: "var(--inland-navy)" }}>
+        <div className="light-section gold-border mx-auto max-w-7xl px-6 py-14 md:px-10 md:py-16">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
             <div>
               <Eyebrow>Acquisition Targets</Eyebrow>
