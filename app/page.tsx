@@ -30,7 +30,7 @@ export default function Home() {
     <main className="page-shell">
       <Header />
 
-      <section className="relative flex min-h-[88vh] items-center justify-center px-6 pb-28 pt-28 md:px-10 md:pb-32 md:pt-32" style={{ background: "var(--inland-navy)" }}>
+      <section className="relative flex min-h-screen items-center justify-center px-6 pt-28 md:px-10 md:pt-32" style={{ background: "var(--inland-navy)" }}>
         <div className="flex flex-col items-center text-center">
           <h1 className="sr-only">Inland Tide Holdings</h1>
           <Image
@@ -41,16 +41,14 @@ export default function Home() {
             priority
             className="h-auto w-full max-w-[720px]"
           />
-        </div>
-        <div className="absolute inset-x-0 bottom-0 px-6 md:px-10">
-          <div className="mx-auto max-w-7xl border-t py-6 text-center" style={{ borderColor: "var(--tide-gold)" }}>
-            <p className="brand-display text-2xl font-semibold tracking-wide md:text-4xl" style={{ color: "var(--arch-white)" }}>
-              Acquisitions | Advisory | Venture
-            </p>
-          </div>
+          <div className="gold-rule mt-10 w-24" />
+          <p className="brand-display mt-8 text-3xl font-semibold tracking-wide md:text-5xl" style={{ color: "var(--arch-white)" }}>
+            Acquisitions | Advisory | Venture
+          </p>
         </div>
       </section>
-      <section className="light-section border-t px-6 py-20 md:px-10 md:py-28" style={{ borderColor: "var(--tide-gold)" }}>
+
+      <section className="light-section px-6 py-20 md:px-10 md:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
             <div>
