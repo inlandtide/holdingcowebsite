@@ -36,10 +36,10 @@ export default function Home() {
           <Image
             src="/brand/inland-tide-logo-inverted.svg"
             alt="Inland Tide Holdings"
-            width={760}
-            height={270}
+            width={980}
+            height={348}
             priority
-            className="h-auto w-full max-w-[720px]"
+            className="h-auto w-full max-w-[900px]"
           />
         </div>
       </section>

@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
+- Enlarged the Inland Tide logo in the homepage hero.
 - Moved “Acquisitions | Advisory | Venture” into a Moulding STL-inspired dark transition band with gold diamond markers and divided columns.
 - Reverted the last two hero transition experiments, restoring the standard hero-to-light-section break with the tagline directly beneath the hero logo.
 - Reverted the previous hero transition cleanup, restoring “Acquisitions | Advisory | Venture” directly beneath the hero logo.
