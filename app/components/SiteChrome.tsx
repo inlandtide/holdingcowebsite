@@ -15,12 +15,12 @@ export function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 border-b pb-5" style={{ borderColor: "var(--tide-gold)" }}>
         <Link href="/" aria-label="Inland Tide Holdings home" className="flex items-center">
           <Image
-            src="/brand/inland-tide-logo-inverted.svg"
+            src="/brand/inland-tide-menu-mark.png"
             alt="Inland Tide Holdings"
-            width={260}
-            height={92}
+            width={2000}
+            height={2000}
             priority
-            className="h-14 w-auto md:h-16"
+            className="h-12 w-auto md:h-14"
           />
         </Link>
         <nav className="hidden items-center gap-8 text-xs font-medium uppercase tracking-[0.22em] md:flex">
