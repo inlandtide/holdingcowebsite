@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## [2026-05-21]
 ### Added
+- Added Inland Tide logo favicon assets for the browser tab icon.
 - Added the uploaded inverted favicon-style Inland Tide mark as the menu bar logo asset.
 - Added “Acquisitions | Advisory | Venture” directly beneath the homepage hero logo.
 - Built the full Inland Tide Holdings website with homepage, about page, and portfolio page.
@@ -12,6 +13,7 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
+- Updated the website browser tab favicon to use the Inland Tide logo.
 - Decreased the current homepage hero top spacing by approximately 15% while keeping the tighter bottom spacing unchanged.
 - Restored the top homepage hero spacing above the logo while keeping the tighter bottom spacing below “Built in St. Louis.”
 - Further reduced the homepage hero spacing above the arch and below “Built in St. Louis” by approximately 50%.
