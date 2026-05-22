@@ -11,11 +11,11 @@ const navigation = [
 
 export function Header() {
   return (
-    <header className="absolute inset-x-0 top-0 z-20 px-6 py-6 md:px-10" style={{ background: "var(--arch-white)", color: "var(--inland-navy)" }}>
+    <header className="absolute inset-x-0 top-0 z-20 px-6 py-6 md:px-10" style={{ background: "var(--inland-navy)" }}>
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 border-b pb-5" style={{ borderColor: "var(--tide-gold)" }}>
         <Link href="/" aria-label="Inland Tide Holdings home" className="flex items-center">
           <Image
-            src="/brand/inland-tide-logo-full-color.svg"
+            src="/brand/inland-tide-logo-inverted.svg"
             alt="Inland Tide Holdings"
             width={260}
             height={92}
@@ -33,7 +33,7 @@ export function Header() {
         <Link
           href="/#contact"
           className="hidden border px-5 py-3 text-xs font-medium uppercase tracking-[0.18em] transition md:inline-flex"
-          style={{ borderColor: "var(--tide-gold)", color: "var(--inland-navy)" }}
+          style={{ borderColor: "var(--tide-gold)", color: "var(--tide-gold)" }}
         >
           Share an Opportunity
         </Link>

@@ -30,25 +30,51 @@ export default function Home() {
     <main className="page-shell">
       <Header />
 
-      <section className="relative flex min-h-screen items-center justify-center px-6 pt-28 md:px-10 md:pt-32" style={{ background: "var(--arch-white)" }}>
-        <div className="flex flex-col items-center text-center">
-          <h1 className="sr-only">Inland Tide Holdings</h1>
-          <Image
-            src="/brand/inland-tide-logo-full-color-hero-tight.svg"
-            alt="Inland Tide Holdings"
-            width={1200}
-            height={1005}
-            priority
-            className="h-auto w-full max-w-[92vw] md:max-w-[980px]"
-          />
+      <section className="relative px-6 pb-20 pt-44 md:px-10 md:pb-28 md:pt-56" style={{ background: "var(--inland-navy)" }}>
+        <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
+          <div>
+            <Eyebrow>Private Investment & Holding Company</Eyebrow>
+            <h1 className="brand-display mt-7 max-w-5xl text-6xl font-semibold leading-[0.95] tracking-wide md:text-8xl">
+              Seeking enduring businesses for long-term ownership.
+            </h1>
+            <div className="gold-rule my-8 w-28" />
+            <p className="max-w-2xl text-lg leading-8" style={{ color: "var(--parchment)" }}>
+              Inland Tide Holdings is actively looking for manufacturing, construction, and seafood acquisition opportunities where patient capital and operator experience can support the next chapter of growth.
+            </p>
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+              <Link href="/#contact" className="border px-7 py-4 text-center text-xs font-semibold uppercase tracking-[0.22em]" style={{ background: "var(--tide-gold)", borderColor: "var(--tide-gold)", color: "var(--inland-navy)" }}>
+                Share an Opportunity
+              </Link>
+              <Link href="/portfolio" className="border px-7 py-4 text-center text-xs font-semibold uppercase tracking-[0.22em]" style={{ borderColor: "var(--tide-gold)", color: "var(--tide-gold)" }}>
+                Acquisition Focus
+              </Link>
+            </div>
+          </div>
+
+          <div className="gold-border p-6 md:p-10">
+            <div className="border p-8 md:p-10" style={{ borderColor: "var(--tide-gold)" }}>
+              <Image
+                src="/brand/inland-tide-logo-inverted.svg"
+                alt="Inland Tide Holdings"
+                width={320}
+                height={114}
+                priority
+                className="mx-auto h-28 w-auto md:h-36"
+              />
+              <div className="gold-rule mx-auto my-8 w-20" />
+              <p className="mt-6 text-center text-sm uppercase tracking-[0.24em] gold-text">
+                Built in St. Louis
+              </p>
+            </div>
+          </div>
         </div>
       </section>
-      <section className="border-y" style={{ background: "var(--arch-white)", borderColor: "var(--tide-gold)" }}>
+      <section className="border-y" style={{ background: "var(--inland-navy)", borderColor: "var(--tide-gold)" }}>
         <div className="mx-auto grid max-w-7xl md:grid-cols-3">
           {["Acquisitions", "Advisory", "Venture"].map((item) => (
             <div key={item} className="flex items-center justify-center gap-3 border-t px-6 py-7 text-center md:border-l md:border-t-0 first:md:border-l-0" style={{ borderColor: "var(--tide-gold)" }}>
               <span className="text-sm gold-text">◆</span>
-              <p className="text-xs font-semibold uppercase tracking-[0.28em]" style={{ color: "var(--inland-navy)" }}>{item}</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.28em]" style={{ color: "var(--arch-white)" }}>{item}</p>
             </div>
           ))}
         </div>
