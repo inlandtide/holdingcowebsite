@@ -30,8 +30,8 @@ export default function Home() {
     <main className="page-shell">
       <Header />
 
-      <section className="relative flex min-h-screen items-center justify-center px-6 pb-[3.75rem] pt-[8.25rem] md:px-10 md:pb-[5.25rem] md:pt-[10.5rem]" style={{ background: "var(--inland-navy)" }}>
-        <div className="w-full max-w-5xl rounded-[2rem] px-6 py-[1.875rem] md:px-10 md:py-12">
+      <section className="relative flex min-h-[72vh] items-center justify-center px-6 pb-[1.875rem] pt-[4.125rem] md:px-10 md:pb-[2.625rem] md:pt-[5.25rem]" style={{ background: "var(--inland-navy)" }}>
+        <div className="w-full max-w-5xl rounded-[2rem] px-6 py-[0.9375rem] md:px-10 md:py-6">
           <div>
             <h1 className="sr-only">Inland Tide Holdings</h1>
             <Image
