@@ -30,25 +30,25 @@ export default function Home() {
     <main className="page-shell">
       <Header />
 
-      <section className="relative flex min-h-screen items-center justify-center px-6 pt-28 md:px-10 md:pt-32" style={{ background: "var(--inland-navy)" }}>
+      <section className="relative flex min-h-screen items-center justify-center px-6 pt-28 md:px-10 md:pt-32" style={{ background: "var(--arch-white)" }}>
         <div className="flex flex-col items-center text-center">
           <h1 className="sr-only">Inland Tide Holdings</h1>
           <Image
-            src="/brand/inland-tide-logo-inverted.svg"
+            src="/brand/inland-tide-logo-full-color.svg"
             alt="Inland Tide Holdings"
-            width={320}
-            height={114}
+            width={980}
+            height={348}
             priority
-            className="h-auto w-full max-w-[1120px]"
+            className="h-auto w-full max-w-[1040px]"
           />
         </div>
       </section>
-      <section className="border-y" style={{ background: "var(--inland-navy)", borderColor: "var(--tide-gold)" }}>
+      <section className="border-y" style={{ background: "var(--arch-white)", borderColor: "var(--tide-gold)" }}>
         <div className="mx-auto grid max-w-7xl md:grid-cols-3">
           {["Acquisitions", "Advisory", "Venture"].map((item) => (
             <div key={item} className="flex items-center justify-center gap-3 border-t px-6 py-7 text-center md:border-l md:border-t-0 first:md:border-l-0" style={{ borderColor: "var(--tide-gold)" }}>
               <span className="text-sm gold-text">◆</span>
-              <p className="text-xs font-semibold uppercase tracking-[0.28em]" style={{ color: "var(--arch-white)" }}>{item}</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.28em]" style={{ color: "var(--inland-navy)" }}>{item}</p>
             </div>
           ))}
         </div>

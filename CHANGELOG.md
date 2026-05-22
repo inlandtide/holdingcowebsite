@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
+- Inverted the homepage menu and hero to a white background, switched to the full-color logo, and kept the Acquisitions, Advisory, Venture band format.
 - Restored the homepage hero logo to the original full-website-build intrinsic dimensions while keeping the larger hero presentation and the Acquisitions, Advisory, Venture transition band.
 - Enlarged the Inland Tide logo in the homepage hero.
 - Moved “Acquisitions | Advisory | Venture” into a Moulding STL-inspired dark transition band with gold diamond markers and divided columns.
