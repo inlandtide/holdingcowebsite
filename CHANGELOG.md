@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
+- Reduced the homepage hero vertical padding above the arch and below “Built in St. Louis” by approximately 25%.
 - Updated the menu bar to use the uploaded favicon-style Inland Tide mark instead of the full wordmark.
 - Removed the gold border framing around the homepage hero logo while keeping the logo-focused hero and Acquisitions, Advisory, Venture band.
 - Removed the hero text block and made the framed Inland Tide logo card the full hero focus while keeping the Acquisitions, Advisory, Venture band below it.
