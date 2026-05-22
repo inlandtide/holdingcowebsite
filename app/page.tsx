@@ -34,12 +34,12 @@ export default function Home() {
         <div className="flex flex-col items-center text-center">
           <h1 className="sr-only">Inland Tide Holdings</h1>
           <Image
-            src="/brand/inland-tide-logo-full-color.svg"
+            src="/brand/inland-tide-logo-full-color-hero-tight.svg"
             alt="Inland Tide Holdings"
-            width={1500}
-            height={533}
+            width={1200}
+            height={1005}
             priority
-            className="h-auto w-full max-w-[92vw] md:max-w-[1400px]"
+            className="h-auto w-full max-w-[92vw] md:max-w-[980px]"
           />
         </div>
       </section>

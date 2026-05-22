@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## [2026-05-21]
 ### Added
+- Added a tightly cropped full-color hero logo asset so the visible Inland Tide mark and wordmark display much larger in the homepage hero.
 - Added “Acquisitions | Advisory | Venture” directly beneath the homepage hero logo.
 - Built the full Inland Tide Holdings website with homepage, about page, and portfolio page.
 - Added approved Inland Tide logo assets from the uploaded brand package under `/public/brand`.
@@ -11,6 +12,7 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
+- Switched the homepage hero to use the tight full-color hero logo asset instead of only increasing the outer image element size.
 - Increased the desktop homepage hero logo scale so the full-color Inland Tide mark appears much larger above the Acquisitions, Advisory, Venture band.
 - Inverted the homepage menu and hero to a white background, switched to the full-color logo, and kept the Acquisitions, Advisory, Venture band format.
 - Restored the homepage hero logo to the original full-website-build intrinsic dimensions while keeping the larger hero presentation and the Acquisitions, Advisory, Venture transition band.
