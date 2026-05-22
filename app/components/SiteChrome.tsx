@@ -32,7 +32,7 @@ export function Header() {
         </nav>
         <Link
           href="/#contact"
-          className="hidden border px-5 py-3 text-xs font-medium uppercase tracking-[0.18em] transition md:inline-flex"
+          className="hidden rounded-full border px-5 py-3 text-xs font-medium uppercase tracking-[0.18em] transition md:inline-flex"
           style={{ borderColor: "var(--tide-gold)", color: "var(--tide-gold)" }}
         >
           Share an Opportunity

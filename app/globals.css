@@ -123,7 +123,7 @@ textarea {
   background: var(--inland-navy);
   color: var(--arch-white);
   outline: none;
-  border-radius: 0;
+  border-radius: 1rem;
 }
 
 .form-field::placeholder {
@@ -140,7 +140,7 @@ textarea {
   background: var(--arch-white);
   color: var(--inland-navy);
   outline: none;
-  border-radius: 0;
+  border-radius: 1rem;
 }
 
 .form-field-light::placeholder {

@@ -62,7 +62,7 @@ export default function AboutPage() {
           </div>
           <div className="mt-14 grid gap-8 lg:grid-cols-2">
             {leaders.map((leader) => (
-              <article key={leader.name} className="gold-border p-8 md:p-10">
+              <article key={leader.name} className="gold-border rounded-3xl p-8 md:p-10">
                 <p className="text-xs uppercase tracking-[0.24em] gold-text">{leader.title}</p>
                 <h3 className="brand-display mt-4 text-5xl font-semibold">{leader.name}</h3>
                 <div className="gold-rule my-7 w-20" />
@@ -81,13 +81,13 @@ export default function AboutPage() {
             <h2 className="brand-display mt-5 text-5xl font-semibold leading-none md:text-6xl">
               The standards behind every acquisition conversation.
             </h2>
-            <Link href="/portfolio" className="mt-10 inline-flex border px-7 py-4 text-xs font-semibold uppercase tracking-[0.22em]" style={{ borderColor: "var(--tide-gold)", color: "var(--inland-navy)" }}>
+            <Link href="/portfolio" className="mt-10 inline-flex rounded-full border px-7 py-4 text-xs font-semibold uppercase tracking-[0.22em]" style={{ borderColor: "var(--tide-gold)", color: "var(--inland-navy)" }}>
               View Acquisition Focus
             </Link>
           </div>
           <div className="grid gap-4">
             {values.map((value, index) => (
-              <div key={value} className="flex gap-5 border p-6" style={{ borderColor: "var(--tide-gold)" }}>
+              <div key={value} className="flex gap-5 rounded-2xl border p-6" style={{ borderColor: "var(--tide-gold)" }}>
                 <span className="brand-display text-4xl font-semibold gold-text">0{index + 1}</span>
                 <p className="self-center text-base leading-7 slate-text">{value}</p>
               </div>

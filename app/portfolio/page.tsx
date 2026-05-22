@@ -63,14 +63,14 @@ export default function PortfolioPage() {
 
           <div className="mt-14 grid gap-8 lg:grid-cols-2">
             {portfolioItems.map((item) => (
-              <article key={item.name} className="focus-card p-8 md:p-10">
+              <article key={item.name} className="focus-card rounded-3xl p-8 md:p-10">
                 <p className="text-xs uppercase tracking-[0.24em] gold-text">{item.status}</p>
                 <h3 className="brand-display mt-5 text-5xl font-semibold">{item.name}</h3>
                 <div className="gold-rule my-7 w-20" />
                 <p className="text-base font-semibold leading-7" style={{ color: "var(--inland-navy)" }}>{item.focus}</p>
                 <p className="mt-5 text-base leading-8 slate-text">{item.copy}</p>
                 {item.href ? (
-                  <a href={item.href} target="_blank" rel="noreferrer" className="mt-8 inline-flex border px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em]" style={{ borderColor: "var(--tide-gold)", color: "var(--inland-navy)" }}>
+                  <a href={item.href} target="_blank" rel="noreferrer" className="mt-8 inline-flex rounded-full border px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em]" style={{ borderColor: "var(--tide-gold)", color: "var(--inland-navy)" }}>
                     Visit Website
                   </a>
                 ) : (
@@ -92,7 +92,7 @@ export default function PortfolioPage() {
           </div>
           <div className="mt-14 grid gap-6 md:grid-cols-2">
             {criteria.map((item, index) => (
-              <article key={item.title} className="gold-border p-8">
+              <article key={item.title} className="gold-border rounded-3xl p-8">
                 <p className="brand-display text-4xl font-semibold gold-text">0{index + 1}</p>
                 <h3 className="brand-display mt-5 text-4xl font-semibold">{item.title}</h3>
                 <p className="mt-5 text-base leading-8" style={{ color: "var(--parchment)" }}>{item.copy}</p>
@@ -111,7 +111,7 @@ export default function PortfolioPage() {
           <p className="mx-auto mt-7 max-w-3xl text-lg leading-8 slate-text">
             We welcome conversations with owners, advisors, brokers, founders, and referral partners who value confidentiality, clarity, and long-term thinking.
           </p>
-          <Link href="/#contact" className="mt-10 inline-flex border px-7 py-4 text-xs font-semibold uppercase tracking-[0.22em]" style={{ background: "var(--tide-gold)", borderColor: "var(--tide-gold)", color: "var(--inland-navy)" }}>
+          <Link href="/#contact" className="mt-10 inline-flex rounded-full border px-7 py-4 text-xs font-semibold uppercase tracking-[0.22em]" style={{ background: "var(--tide-gold)", borderColor: "var(--tide-gold)", color: "var(--inland-navy)" }}>
             Share an Opportunity
           </Link>
         </div>
