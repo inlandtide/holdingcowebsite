@@ -31,7 +31,7 @@ export default function Home() {
       <Header />
 
       <section className="relative flex min-h-screen items-center justify-center px-6 pb-[3.75rem] pt-[8.25rem] md:px-10 md:pb-[5.25rem] md:pt-[10.5rem]" style={{ background: "var(--inland-navy)" }}>
-        <div className="w-full max-w-5xl px-6 py-[1.875rem] md:px-10 md:py-12">
+        <div className="w-full max-w-5xl rounded-[2rem] px-6 py-[1.875rem] md:px-10 md:py-12">
           <div>
             <h1 className="sr-only">Inland Tide Holdings</h1>
             <Image
@@ -49,8 +49,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="border-y" style={{ background: "var(--inland-navy)", borderColor: "var(--tide-gold)" }}>
-        <div className="mx-auto grid max-w-7xl md:grid-cols-3">
+      <section className="px-6 py-6 md:px-10" style={{ background: "var(--inland-navy)" }}>
+        <div className="mx-auto grid max-w-7xl overflow-hidden rounded-full border md:grid-cols-3" style={{ borderColor: "var(--tide-gold)" }}>
           {["Acquisitions", "Advisory", "Venture"].map((item) => (
             <div key={item} className="flex items-center justify-center gap-3 border-t px-6 py-7 text-center md:border-l md:border-t-0 first:md:border-l-0" style={{ borderColor: "var(--tide-gold)" }}>
               <span className="text-sm gold-text">◆</span>
@@ -74,7 +74,7 @@ export default function Home() {
           </div>
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {focusAreas.map((area) => (
-              <article key={area.title} className="focus-card p-8">
+              <article key={area.title} className="focus-card rounded-3xl p-8">
                 <p className="text-xs uppercase tracking-[0.24em] gold-text">Target Sector</p>
                 <h3 className="brand-display mt-5 text-4xl font-semibold">{area.title}</h3>
                 <p className="mt-5 text-sm leading-7 slate-text">{area.copy}</p>
@@ -86,7 +86,7 @@ export default function Home() {
 
       <section className="px-6 py-20 md:px-10 md:py-28">
         <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[1fr_1fr] lg:items-center">
-          <div className="gold-border p-8 md:p-12">
+          <div className="gold-border rounded-3xl p-8 md:p-12">
             <Eyebrow>Open to Opportunities</Eyebrow>
             <h2 className="brand-display mt-5 text-5xl font-semibold leading-none md:text-6xl">
               If you know a business owner thinking about what comes next, we would like to talk.
@@ -94,13 +94,13 @@ export default function Home() {
             <p className="mt-8 text-lg leading-8" style={{ color: "var(--parchment)" }}>
               We welcome direct conversations with owners, introductions from advisors, and referrals from people who know quality businesses in our target sectors. Our approach is confidential, respectful, and focused on long-term continuity for employees, customers, and the owner’s legacy.
             </p>
-            <Link href="/#contact" className="mt-10 inline-flex border px-7 py-4 text-xs font-semibold uppercase tracking-[0.22em]" style={{ borderColor: "var(--tide-gold)", color: "var(--tide-gold)" }}>
+            <Link href="/#contact" className="mt-10 inline-flex rounded-full border px-7 py-4 text-xs font-semibold uppercase tracking-[0.22em]" style={{ borderColor: "var(--tide-gold)", color: "var(--tide-gold)" }}>
               Share an Opportunity
             </Link>
           </div>
           <div className="grid gap-4">
             {principles.map((principle, index) => (
-              <div key={principle} className="flex items-center gap-6 border p-6" style={{ borderColor: "var(--tide-gold)" }}>
+              <div key={principle} className="flex items-center gap-6 rounded-2xl border p-6" style={{ borderColor: "var(--tide-gold)" }}>
                 <span className="brand-display text-4xl font-semibold gold-text">0{index + 1}</span>
                 <p className="text-sm font-medium uppercase tracking-[0.2em]">{principle}</p>
               </div>
@@ -120,7 +120,7 @@ export default function Home() {
               If you are an owner, advisor, broker, founder, or referral partner with a potential manufacturing, construction, seafood, or related operating business opportunity, please reach out. We are always open to a thoughtful first conversation.
             </p>
           </div>
-          <div className="gold-border bg-white p-6 md:p-10">
+          <div className="gold-border rounded-3xl bg-white p-6 md:p-10">
             <ContactForm variant="light" />
           </div>
         </div>
