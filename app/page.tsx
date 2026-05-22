@@ -31,8 +31,8 @@ export default function Home() {
       <Header />
 
       <section className="relative flex min-h-screen items-center justify-center px-6 pb-20 pt-44 md:px-10 md:pb-28 md:pt-56" style={{ background: "var(--inland-navy)" }}>
-        <div className="w-full max-w-5xl gold-border p-6 md:p-10">
-          <div className="border p-10 md:p-16" style={{ borderColor: "var(--tide-gold)" }}>
+        <div className="w-full max-w-5xl px-6 py-10 md:px-10 md:py-16">
+          <div>
             <h1 className="sr-only">Inland Tide Holdings</h1>
             <Image
               src="/brand/inland-tide-logo-inverted.svg"

@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
+- Removed the gold border framing around the homepage hero logo while keeping the logo-focused hero and Acquisitions, Advisory, Venture band.
 - Removed the hero text block and made the framed Inland Tide logo card the full hero focus while keeping the Acquisitions, Advisory, Venture band below it.
 - Restored the original two-column homepage hero approach with a left-side content block and right-side framed logo card.
 - Removed the failed tight hero logo asset and returned the hero card to the approved inverted logo artwork.
