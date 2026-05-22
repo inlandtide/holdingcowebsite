@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
+- Restored the top homepage hero spacing above the logo while keeping the tighter bottom spacing below “Built in St. Louis.”
 - Further reduced the homepage hero spacing above the arch and below “Built in St. Louis” by approximately 50%.
 - Extended the rounded-edge design language to the Share an Opportunity button, forms, About page cards, Portfolio page cards, and site-wide calls to action.
 - Added a homepage-only rounded-edge design variation for the hero logo area, Acquisitions / Advisory / Venture band, acquisition cards, opportunity panel, and contact panel.
