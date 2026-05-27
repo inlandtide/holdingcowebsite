@@ -55,7 +55,7 @@ export function Footer() {
             className="h-16 w-auto"
           />
           <p className="mt-6 max-w-md text-sm leading-7" style={{ color: "var(--parchment)" }}>
-            Inland Tide Holdings is a St. Louis private investment and holding company actively seeking manufacturing, home services, and seafood acquisition opportunities.
+            Inland Tide Holdings is a St. Louis private investment and holding company actively seeking manufacturing, home services, and food production and distribution acquisition opportunities.
           </p>
         </div>
         <div>
@@ -77,7 +77,7 @@ export function Footer() {
       </div>
       <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-3 border-t pt-6 text-xs uppercase tracking-[0.18em] md:flex-row md:items-center md:justify-between" style={{ borderColor: "var(--tide-gold)", color: "var(--parchment)" }}>
         <p>&copy; {new Date().getFullYear()} Inland Tide Holdings. All rights reserved.</p>
-        <p>Manufacturing · Home Services · Seafood</p>
+        <p>Manufacturing · Home Services · Food Production & Distribution</p>
       </div>
     </footer>
   );

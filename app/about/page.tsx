@@ -20,7 +20,7 @@ const values = [
   "Preserve the legacy of founder-led businesses.",
   "Operate with aligned incentives and direct accountability.",
   "Use modern technology where it strengthens durable fundamentals.",
-  "Build a portfolio in manufacturing, home services, seafood, and related operating businesses that benefits employees, customers, founders, and communities.",
+  "Build a portfolio in manufacturing, home services, food production and distribution, and related operating businesses that benefits employees, customers, founders, and communities.",
 ];
 
 export default function AboutPage() {
@@ -46,7 +46,7 @@ export default function AboutPage() {
               Inland Tide is a private investment and holding company focused on long-term value creation through direct acquisitions, strategic partnerships, and venture capital. We partner with established businesses and high-growth startups to provide the operational expertise and capital necessary for their next chapter.
             </p>
             <p>
-              Our focus is intentionally practical: stable, profitable businesses in manufacturing, home services, and seafood; select advisory relationships where equity alignment creates shared outcomes; and acquisition opportunities where patient ownership, modern systems, and disciplined execution can support continuity and long-term growth.
+              Our focus is intentionally practical: stable, profitable businesses in manufacturing, home services, and food production and distribution; select advisory relationships where equity alignment creates shared outcomes; and acquisition opportunities where patient ownership, modern systems, and disciplined execution can support continuity and long-term growth.
             </p>
           </div>
         </div>

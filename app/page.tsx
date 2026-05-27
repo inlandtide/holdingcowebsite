@@ -13,15 +13,15 @@ const focusAreas = [
     copy: "We are interested in home services and home services-adjacent businesses where strong execution, reputation, and local market knowledge create durable value.",
   },
   {
-    title: "Seafood",
-    copy: "We welcome conversations with seafood businesses across processing, distribution, specialty supply, and related operating models where patient ownership can support the next stage of growth.",
+    title: "Food Production & Distribution",
+    copy: "We welcome conversations with food production and distribution businesses across processing, logistics, specialty supply, and related operating models where patient ownership can support the next stage of growth.",
   },
 ];
 
 const principles = [
   "Manufacturing acquisition opportunities",
   "Home services acquisition opportunities",
-  "Seafood acquisition opportunities",
+  "Food production and distribution acquisition opportunities",
   "Owner conversations and referrals",
 ];
 
@@ -65,7 +65,7 @@ export default function Home() {
             <div>
               <Eyebrow>Acquisition Targets</Eyebrow>
               <h2 className="brand-display mt-5 text-5xl font-semibold leading-none md:text-6xl">
-                Seeking enduring businesses in manufacturing, home services, and seafood.
+                Seeking enduring businesses in manufacturing, home services, and food production and distribution.
               </h2>
             </div>
             <p className="text-lg leading-8 slate-text">
@@ -117,7 +117,7 @@ export default function Home() {
               Tell us about a business acquisition opportunity.
             </h2>
             <p className="mt-7 text-lg leading-8 slate-text">
-              If you are an owner, advisor, broker, founder, or referral partner with a potential manufacturing, home services, seafood, or related operating business opportunity, please reach out. We are always open to a thoughtful first conversation.
+              If you are an owner, advisor, broker, founder, or referral partner with a potential manufacturing, home services, food production and distribution, or related operating business opportunity, please reach out. We are always open to a thoughtful first conversation.
             </p>
           </div>
           <div className="gold-border rounded-3xl bg-white p-6 md:p-10">
