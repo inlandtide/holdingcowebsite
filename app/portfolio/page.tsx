@@ -5,35 +5,35 @@ const portfolioItems = [
   {
     name: "Moulding STL",
     status: "Current Portfolio Company",
-    focus: "St. Louis moulding and architectural finish solutions.",
-    copy: "Moulding STL is currently part of the Inland Tide portfolio, reflecting the firm’s interest in practical, service-driven businesses with durable local demand and opportunities for disciplined operational growth.",
+    focus: "St. Louis moulding & architectural finish solutions.",
+    copy: "Moulding STL is currently part of the Inland Tide portfolio, reflecting the firm’s interest in practical, service-driven businesses with durable local demand & opportunities for disciplined operational growth.",
     href: "https://mouldingstl.com/",
   },
   {
-    name: "St. Louis Manufacturing Acquisition",
+    name: "St. Louis Manufacturing & Industrial Acquisition",
     status: "Under Contract",
-    focus: "Manufacturing company in the St. Louis region.",
-    copy: "Inland Tide is currently under contract to acquire a manufacturing firm in St. Louis. Additional information is expected later this summer as the transaction process advances.",
+    focus: "Manufacturing & Industrial company in the St. Louis region.",
+    copy: "Inland Tide is currently under contract to acquire a Manufacturing & Industrial firm in St. Louis. Additional information is expected later this summer as the transaction process advances.",
     href: "",
   },
 ];
 
 const criteria = [
   {
-    title: "Manufacturing",
-    copy: "Stable manufacturing companies with practical products, capable teams, repeat customers, and opportunities to improve systems while protecting the company’s existing legacy.",
+    title: "Manufacturing & Industrial",
+    copy: "Stable Manufacturing & Industrial companies with practical products, capable teams, repeat customers, & opportunities to improve systems while protecting the company’s existing legacy.",
   },
   {
     title: "Home Services",
-    copy: "Home services and home services-adjacent companies with strong reputations, reliable execution, and durable local or regional demand.",
+    copy: "Home services & adjacent companies with strong reputations, reliable execution, & durable local or regional demand.",
   },
   {
     title: "Food Production & Distribution",
-    copy: "Food production and distribution businesses across processing, logistics, specialty supply, and related operating models where patient ownership can support continuity and long-term growth.",
+    copy: "Food production & distribution businesses across processing, logistics, specialty supply, & related operating models where patient ownership can support continuity & long-term growth.",
   },
   {
     title: "Open Opportunities",
-    copy: "We are always open to hearing about new and potential acquisition opportunities, including off-market situations and owner-led succession conversations.",
+    copy: "We are always open to hearing about new & potential acquisition opportunities, including off-market situations & owner-led succession conversations.",
   },
 ];
 
@@ -44,7 +44,7 @@ export default function PortfolioPage() {
       <PageIntro
         eyebrow="Portfolio & Acquisition Focus"
         title="Building a long-term portfolio through focused acquisitions."
-        copy="Inland Tide Holdings is actively seeking manufacturing, home services, and food production and distribution acquisition opportunities while continuing to build a portfolio anchored in practical operations and patient ownership."
+        copy="Inland Tide Holdings is actively seeking Manufacturing & Industrial, Home Services, & Food Production & Distribution acquisition opportunities while continuing to build a portfolio anchored in practical operations & patient ownership."
       />
 
       <section className="light-section px-6 py-20 md:px-10 md:py-28">
@@ -57,7 +57,7 @@ export default function PortfolioPage() {
               </h2>
             </div>
             <p className="text-lg leading-8 slate-text">
-              Our portfolio will grow carefully. We prioritize acquisition opportunities where active ownership, operational systems, and founder-respecting transitions can produce durable outcomes for employees, customers, and communities.
+              Our portfolio will grow carefully. We prioritize acquisition opportunities where active ownership, operational systems, & founder-respecting transitions can produce durable outcomes for employees, customers, & communities.
             </p>
           </div>
 
@@ -106,10 +106,10 @@ export default function PortfolioPage() {
         <div className="mx-auto max-w-5xl text-center">
           <Eyebrow>Opportunities</Eyebrow>
           <h2 className="brand-display mt-5 text-5xl font-semibold leading-none md:text-6xl">
-            Know a manufacturing, home services, or food production and distribution business ready for its next chapter?
+            Know a Manufacturing & Industrial, Home Services, or Food Production & Distribution business ready for its next chapter?
           </h2>
           <p className="mx-auto mt-7 max-w-3xl text-lg leading-8 slate-text">
-            We welcome conversations with owners, advisors, brokers, founders, and referral partners who value confidentiality, clarity, and long-term thinking.
+            We welcome conversations with owners, advisors, brokers, founders, & referral partners who value confidentiality, clarity, & long-term thinking.
           </p>
           <Link href="/#contact" className="mt-10 inline-flex rounded-full border px-7 py-4 text-xs font-semibold uppercase tracking-[0.22em]" style={{ background: "var(--tide-gold)", borderColor: "var(--tide-gold)", color: "var(--inland-navy)" }}>
             Share an Opportunity

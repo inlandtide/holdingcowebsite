@@ -5,24 +5,24 @@ import { Eyebrow, Footer, Header } from "./components/SiteChrome";
 
 const focusAreas = [
   {
-    title: "Manufacturing",
-    copy: "We seek stable manufacturing companies with practical products, dependable teams, repeat customers, and opportunities to strengthen operations without disrupting the legacy already built.",
+    title: "Manufacturing & Industrial",
+    copy: "We seek stable Manufacturing & Industrial companies with practical products, dependable teams, repeat customers, & opportunities to strengthen operations without disrupting the legacy already built.",
   },
   {
     title: "Home Services",
-    copy: "We are interested in home services and home services-adjacent businesses where strong execution, reputation, and local market knowledge create durable value.",
+    copy: "We are interested in home services & adjacent businesses where strong execution, reputation, & local market knowledge create durable value.",
   },
   {
     title: "Food Production & Distribution",
-    copy: "We welcome conversations with food production and distribution businesses across processing, logistics, specialty supply, and related operating models where patient ownership can support the next stage of growth.",
+    copy: "We welcome conversations with food production & distribution businesses across processing, logistics, specialty supply, & related operating models where patient ownership can support the next stage of growth.",
   },
 ];
 
 const principles = [
-  "Manufacturing acquisition opportunities",
+  "Manufacturing & Industrial acquisition opportunities",
   "Home services acquisition opportunities",
-  "Food production and distribution acquisition opportunities",
-  "Owner conversations and referrals",
+  "Food production & distribution acquisition opportunities",
+  "Owner conversations & referrals",
 ];
 
 export default function Home() {
@@ -61,15 +61,15 @@ export default function Home() {
       </section>
       <section className="light-section px-6 py-20 md:px-10 md:py-28">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+          <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-end">
             <div>
               <Eyebrow>Acquisition Targets</Eyebrow>
               <h2 className="brand-display mt-5 text-5xl font-semibold leading-none md:text-6xl">
-                Seeking enduring businesses in manufacturing, home services, and food production and distribution.
+                Manufacturing & Industrial. Home Services. Food Production & Distribution.
               </h2>
             </div>
             <p className="text-lg leading-8 slate-text">
-              Inland Tide Holdings is actively looking for business acquisition opportunities where strong operators, patient capital, and a long-term ownership mindset can preserve what works and support the next chapter of growth. We are always open to hearing about new, potential, and off-market acquisition opportunities.
+              Inland Tide Holdings is actively looking for acquisition opportunities where strong operators, patient capital, & a long-term ownership mindset can preserve what works & support the next chapter of growth. We are always open to hearing about new, potential, & off-market opportunities.
             </p>
           </div>
           <div className="mt-14 grid gap-6 md:grid-cols-3">
@@ -92,7 +92,7 @@ export default function Home() {
               If you know a business owner thinking about what comes next, we would like to talk.
             </h2>
             <p className="mt-8 text-lg leading-8" style={{ color: "var(--parchment)" }}>
-              We welcome direct conversations with owners, introductions from advisors, and referrals from people who know quality businesses in our target sectors. Our approach is confidential, respectful, and focused on long-term continuity for employees, customers, and the owner’s legacy.
+              We welcome direct conversations with owners, introductions from advisors, & referrals from people who know quality businesses in our target sectors. Our approach is confidential, respectful, & focused on long-term continuity for employees, customers, & the owner’s legacy.
             </p>
             <Link href="/#contact" className="mt-10 inline-flex rounded-full border px-7 py-4 text-xs font-semibold uppercase tracking-[0.22em]" style={{ borderColor: "var(--tide-gold)", color: "var(--tide-gold)" }}>
               Share an Opportunity
@@ -117,7 +117,7 @@ export default function Home() {
               Tell us about a business acquisition opportunity.
             </h2>
             <p className="mt-7 text-lg leading-8 slate-text">
-              If you are an owner, advisor, broker, founder, or referral partner with a potential manufacturing, home services, food production and distribution, or related operating business opportunity, please reach out. We are always open to a thoughtful first conversation.
+              If you are an owner, advisor, broker, founder, or referral partner with a potential Manufacturing & Industrial, Home Services, Food Production & Distribution, or related operating business opportunity, please reach out. We are always open to a thoughtful first conversation.
             </p>
           </div>
           <div className="gold-border rounded-3xl bg-white p-6 md:p-10">

@@ -5,22 +5,22 @@ const leaders = [
   {
     name: "Tim Hebel",
     title: "Operator & Investor",
-    bio: "Tim is dedicated to acquiring and scaling the businesses that form the backbone of the economy. After fourteen years as founder and owner of Beanstalk Web Solutions, which he led to a successful exit in 2026, Tim began a new chapter with Inland Tide Holdings: building a portfolio focused on long-term acquisitions and strategic growth.",
-    perspective: "His career has been shaped by early adoption and technical depth, from studying Computer Science with an emphasis on AI to investing in Bitcoin in 2011. At Inland Tide, he applies that forward-looking lens to traditional, owner-operated businesses through modern systems, patient ownership, and a buy-and-hold philosophy.",
+    bio: "Tim is dedicated to acquiring & scaling the businesses that form the backbone of the economy. After fourteen years as founder & owner of Beanstalk Web Solutions, which he led to a successful exit in 2026, Tim began a new chapter with Inland Tide Holdings: building a portfolio focused on long-term acquisitions & strategic growth.",
+    perspective: "His career has been shaped by early adoption & technical depth, from studying Computer Science with an emphasis on AI to investing in Bitcoin in 2011. At Inland Tide, he applies that forward-looking lens to traditional, owner-operated businesses through modern systems, patient ownership, & a buy-&-hold philosophy.",
   },
   {
     name: "Ryan Hall",
     title: "Operator & Partner",
-    bio: "Ryan was born and raised in St. Louis and now lives in Ballwin with his wife and two children. After serving five years as President of Beanstalk Web Solutions, he helped lead the company through a successful sale in early 2026 before launching Inland Tide Holdings with a focus on long-term acquisitions and strategic growth.",
-    perspective: "Ryan brings a practical operator’s mindset to Inland Tide’s acquisitions, advisory work, and venture investments. Outside of work, his family spends time on the motocross track and exploring St. Louis, reinforcing the local roots that inform the firm’s long-term commitment to the region.",
+    bio: "Ryan was born & raised in St. Louis & now lives in Ballwin with his wife & two children. After serving five years as President of Beanstalk Web Solutions, he helped lead the company through a successful sale in early 2026 before launching Inland Tide Holdings with a focus on long-term acquisitions & strategic growth.",
+    perspective: "Ryan brings a practical operator’s mindset to Inland Tide’s acquisitions, advisory work, & venture investments. Outside of work, his family spends time on the motocross track & exploring St. Louis, reinforcing the local roots that inform the firm’s long-term commitment to the region.",
   },
 ];
 
 const values = [
   "Preserve the legacy of founder-led businesses.",
-  "Operate with aligned incentives and direct accountability.",
+  "Operate with aligned incentives & direct accountability.",
   "Use modern technology where it strengthens durable fundamentals.",
-  "Build a portfolio in manufacturing, home services, food production and distribution, and related operating businesses that benefits employees, customers, founders, and communities.",
+  "Build a portfolio in Manufacturing & Industrial, Home Services, Food Production & Distribution, & related operating businesses that benefits employees, customers, founders, & communities.",
 ];
 
 export default function AboutPage() {
@@ -30,7 +30,7 @@ export default function AboutPage() {
       <PageIntro
         eyebrow="About Inland Tide"
         title="A holding company built by operators, not spectators."
-        copy="Inland Tide Holdings was formed in St. Louis by Tim Hebel and Ryan Hall to acquire, partner with, and invest in businesses where operational discipline and long-term alignment can create enduring value."
+        copy="Inland Tide Holdings was formed in St. Louis by Tim Hebel & Ryan Hall to acquire, partner with, & invest in businesses where operational discipline & long-term alignment can create enduring value."
       />
 
       <section className="light-section px-6 py-20 md:px-10 md:py-28">
@@ -38,15 +38,15 @@ export default function AboutPage() {
           <div>
             <Eyebrow>Our Perspective</Eyebrow>
             <h2 className="brand-display mt-5 text-5xl font-semibold leading-none md:text-6xl">
-              Patient capital, hands-on leadership, and St. Louis roots.
+              Patient capital, hands-on leadership, & St. Louis roots.
             </h2>
           </div>
           <div className="grid gap-8 text-lg leading-8 slate-text">
             <p>
-              Inland Tide is a private investment and holding company focused on long-term value creation through direct acquisitions, strategic partnerships, and venture capital. We partner with established businesses and high-growth startups to provide the operational expertise and capital necessary for their next chapter.
+              Inland Tide is a private investment & holding company focused on long-term value creation through direct acquisitions, strategic partnerships, & venture capital. We partner with established businesses & high-growth startups to provide the operational expertise & capital necessary for their next chapter.
             </p>
             <p>
-              Our focus is intentionally practical: stable, profitable businesses in manufacturing, home services, and food production and distribution; select advisory relationships where equity alignment creates shared outcomes; and acquisition opportunities where patient ownership, modern systems, and disciplined execution can support continuity and long-term growth.
+              Our focus is intentionally practical: stable, profitable businesses in Manufacturing & Industrial, Home Services, & Food Production & Distribution; select advisory relationships where equity alignment creates shared outcomes; & acquisition opportunities where patient ownership, modern systems, & disciplined execution can support continuity & long-term growth.
             </p>
           </div>
         </div>

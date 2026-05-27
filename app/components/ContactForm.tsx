@@ -43,7 +43,7 @@ export function ContactForm({ variant = "dark" }: { variant?: "dark" | "light" }
       }
     } catch {
       setStatus("error");
-      setErrorMessage("Network error. Please check your connection and try again.");
+      setErrorMessage("Network error. Please check your connection & try again.");
     }
   };
 

@@ -13,7 +13,8 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
-- Replaced the prior food-sector acquisition language with food production and distribution language across site content, metadata, footer copy, and README documentation.
+- Updated Manufacturing language to Manufacturing & Industrial, converted visible “and” wording to ampersands, & tightened the homepage acquisition targets headline layout.
+- Replaced the prior food-sector acquisition language with Food Production & Distribution language across site content, metadata, footer copy, and README documentation.
 - Replaced the prior sector wording with home services language across site content, metadata, footer copy, and README documentation.
 - Updated the website browser tab favicon to use the Inland Tide logo.
 - Decreased the current homepage hero top spacing by approximately 15% while keeping the tighter bottom spacing unchanged.
@@ -38,7 +39,7 @@ All notable changes to this project will be documented in this file.
 - Tested a reverse-color homepage hero treatment using the full-color logo on a light hero background while keeping the menu blue.
 - Replaced the homepage above-the-fold hero with a minimal main full-logo-only hero beneath the menu.
 - Updated the homepage hero to feature the uploaded Inland Tide artwork as the primary hero visual.
-- Refocused homepage, about, portfolio, metadata, footer, and README language around manufacturing, home services, and food production and distribution acquisition opportunities.
+- Refocused homepage, about, portfolio, metadata, footer, and README language around Manufacturing & Industrial, Home Services, & Food Production & Distribution acquisition opportunities.
 - Updated metadata and README site structure to reflect the completed multi-page website.
 - Removed the previous "hello world" connector test from the rendered site.
 
