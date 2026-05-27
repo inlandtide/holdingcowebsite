@@ -24,8 +24,8 @@ const criteria = [
     copy: "Stable manufacturing companies with practical products, capable teams, repeat customers, and opportunities to improve systems while protecting the company’s existing legacy.",
   },
   {
-    title: "Construction",
-    copy: "Construction and construction-adjacent companies with strong reputations, reliable execution, and durable local or regional demand.",
+    title: "Home Services",
+    copy: "Home services and home services-adjacent companies with strong reputations, reliable execution, and durable local or regional demand.",
   },
   {
     title: "Seafood",
@@ -44,7 +44,7 @@ export default function PortfolioPage() {
       <PageIntro
         eyebrow="Portfolio & Acquisition Focus"
         title="Building a long-term portfolio through focused acquisitions."
-        copy="Inland Tide Holdings is actively seeking manufacturing, construction, and seafood acquisition opportunities while continuing to build a portfolio anchored in practical operations and patient ownership."
+        copy="Inland Tide Holdings is actively seeking manufacturing, home services, and seafood acquisition opportunities while continuing to build a portfolio anchored in practical operations and patient ownership."
       />
 
       <section className="light-section px-6 py-20 md:px-10 md:py-28">
@@ -106,7 +106,7 @@ export default function PortfolioPage() {
         <div className="mx-auto max-w-5xl text-center">
           <Eyebrow>Opportunities</Eyebrow>
           <h2 className="brand-display mt-5 text-5xl font-semibold leading-none md:text-6xl">
-            Know a manufacturing, construction, or seafood business ready for its next chapter?
+            Know a manufacturing, home services, or seafood business ready for its next chapter?
           </h2>
           <p className="mx-auto mt-7 max-w-3xl text-lg leading-8 slate-text">
             We welcome conversations with owners, advisors, brokers, founders, and referral partners who value confidentiality, clarity, and long-term thinking.
