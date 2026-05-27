@@ -13,7 +13,7 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
-- Replaced seafood acquisition language with food production and distribution language across site content, metadata, footer copy, and README documentation.
+- Replaced the prior food-sector acquisition language with food production and distribution language across site content, metadata, footer copy, and README documentation.
 - Replaced the prior sector wording with home services language across site content, metadata, footer copy, and README documentation.
 - Updated the website browser tab favicon to use the Inland Tide logo.
 - Decreased the current homepage hero top spacing by approximately 15% while keeping the tighter bottom spacing unchanged.
