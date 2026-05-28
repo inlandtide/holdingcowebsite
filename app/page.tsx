@@ -73,9 +73,6 @@ export default function Home() {
           <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-end">
             <div>
               <Eyebrow>Acquisition Targets</Eyebrow>
-              <h2 className="brand-display mt-5 text-5xl font-semibold leading-none md:text-6xl">
-                Manufacturing & Industrial. Home Services. Food Production & Distribution.
-              </h2>
             </div>
             <p className="text-lg leading-8 slate-text">
               Inland Tide Holdings is actively looking for acquisition opportunities where strong operators, patient capital, & a long-term ownership mindset can preserve what works & support the next chapter of growth. We are always open to hearing about new, potential, & off-market opportunities.
