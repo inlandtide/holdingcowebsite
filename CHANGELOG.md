@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## [2026-05-21]
 ### Added
+- Added the uploaded arch bridge photo as a committed homepage hero background asset.
 - Added Inland Tide logo favicon assets for the browser tab icon.
 - Added the uploaded inverted favicon-style Inland Tide mark as the menu bar logo asset.
 - Added “Acquisitions | Advisory | Venture” directly beneath the homepage hero logo.
@@ -13,6 +14,7 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
+- Updated the homepage hero to use the uploaded arch bridge photo with a heavy Inland Navy blue overlay.
 - Updated Manufacturing language to Manufacturing & Industrial, converted visible “and” wording to ampersands, & tightened the homepage acquisition targets headline layout.
 - Replaced the prior food-sector acquisition language with Food Production & Distribution language across site content, metadata, footer copy, and README documentation.
 - Replaced the prior sector wording with home services language across site content, metadata, footer copy, and README documentation.
