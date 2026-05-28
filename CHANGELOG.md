@@ -14,6 +14,7 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
+- Promoted “Acquisition Targets” into the main homepage section headline above the acquisition-opportunity paragraph.
 - Removed the homepage Acquisition Targets headline listing the three target sectors.
 - Darkened the homepage arch bridge hero blue overlay by approximately 25%.
 - Updated the homepage hero to use the uploaded arch bridge photo with a heavy Inland Navy blue overlay.

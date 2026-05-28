@@ -70,11 +70,12 @@ export default function Home() {
       </section>
       <section className="light-section px-6 py-20 md:px-10 md:py-28">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-end">
-            <div>
-              <Eyebrow>Acquisition Targets</Eyebrow>
-            </div>
-            <p className="text-lg leading-8 slate-text">
+          <div className="mx-auto max-w-5xl text-center">
+            <h2 className="brand-display text-6xl font-semibold leading-none tracking-wide md:text-8xl">
+              Acquisition Targets
+            </h2>
+            <div className="gold-rule mx-auto my-8 w-24" />
+            <p className="mx-auto max-w-4xl text-xl leading-9 slate-text md:text-2xl md:leading-10">
               Inland Tide Holdings is actively looking for acquisition opportunities where strong operators, patient capital, & a long-term ownership mindset can preserve what works & support the next chapter of growth. We are always open to hearing about new, potential, & off-market opportunities.
             </p>
           </div>
