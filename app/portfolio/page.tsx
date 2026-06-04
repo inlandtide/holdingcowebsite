@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Eyebrow, Footer, Header, PageIntro } from "../components/SiteChrome";
+import { Eyebrow, Footer, Header } from "../components/SiteChrome";
 
 const portfolioItems = [
   {
@@ -48,11 +48,27 @@ export default function PortfolioPage() {
   return (
     <main className="page-shell">
       <Header />
-      <PageIntro
-        eyebrow="Portfolio & Acquisition Focus"
-        title="Building a long-term portfolio through focused acquisitions."
-        copy="Inland Tide Holdings is actively seeking Manufacturing & Industrial, Home Services, & Food Production & Distribution acquisition opportunities while continuing to build a portfolio anchored in practical operations & patient ownership."
-      />
+      <section className="relative overflow-hidden px-6 pb-20 pt-44 md:px-10 md:pb-28 md:pt-52" style={{ background: "var(--inland-navy)" }}>
+        <Image
+          src="/brand/inland-tide-portfolio-hero-monument.webp"
+          alt="Equestrian monument in St. Louis"
+          fill
+          priority
+          sizes="100vw"
+          className="object-contain object-center"
+        />
+        <div className="absolute inset-0" style={{ background: "rgba(24, 44, 78, 0.865)" }} />
+        <div className="relative z-10 mx-auto max-w-5xl text-center">
+          <Eyebrow>Portfolio & Acquisition Focus</Eyebrow>
+          <h1 className="brand-display mt-6 text-5xl font-semibold leading-none tracking-wide md:text-7xl">
+            Building a long-term portfolio through focused acquisitions.
+          </h1>
+          <div className="gold-rule mx-auto my-8 w-24" />
+          <p className="mx-auto max-w-3xl text-lg leading-8" style={{ color: "var(--parchment)" }}>
+            Inland Tide Holdings is actively seeking Manufacturing & Industrial, Home Services, & Food Production & Distribution acquisition opportunities while continuing to build a portfolio anchored in practical operations & patient ownership.
+          </p>
+        </div>
+      </section>
 
       <section className="light-section px-6 py-20 md:px-10 md:py-28">
         <div className="mx-auto max-w-7xl">
