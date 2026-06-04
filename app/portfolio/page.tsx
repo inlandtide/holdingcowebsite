@@ -55,7 +55,7 @@ export default function PortfolioPage() {
           fill
           priority
           sizes="100vw"
-          className="object-contain object-center"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0" style={{ background: "rgba(24, 44, 78, 0.865)" }} />
         <div className="relative z-10 mx-auto max-w-5xl text-center">

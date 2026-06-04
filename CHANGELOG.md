@@ -18,6 +18,7 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
+- Switched the Portfolio page monument hero to the same full-bleed object-cover background treatment used by the other hero images.
 - Updated the Portfolio page hero with the uploaded monument photo, using the same heavy blue overlay and object-contain positioning so the full monument remains visible.
 - Replaced the About page hero image with the uploaded Gateway Arch/Old Courthouse photo while keeping the same heavy blue overlay treatment.
 - Updated the About page hero with the uploaded Busch Stadium/night skyline image and the same heavy blue overlay treatment as the homepage.
