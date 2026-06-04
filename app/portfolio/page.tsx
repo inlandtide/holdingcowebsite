@@ -3,17 +3,17 @@ import { Eyebrow, Footer, Header, PageIntro } from "../components/SiteChrome";
 
 const portfolioItems = [
   {
-    name: "Moulding STL",
+    name: "Moulding St. Louis",
     status: "Current Portfolio Company",
     focus: "St. Louis moulding & architectural finish solutions.",
-    copy: "Moulding STL is currently part of the Inland Tide portfolio, reflecting the firm’s interest in practical, service-driven businesses with durable local demand & opportunities for disciplined operational growth.",
+    copy: "Moulding St. Louis is currently part of the Inland Tide portfolio, reflecting the firm’s interest in practical, service-driven businesses with durable local demand & opportunities for disciplined operational growth.",
     href: "https://mouldingstl.com/",
   },
   {
-    name: "St. Louis Manufacturing & Industrial Acquisition",
+    name: "Acquisition of a St. Louis Manufacturing Company",
     status: "Under Contract",
-    focus: "Manufacturing & Industrial company in the St. Louis region.",
-    copy: "Inland Tide is currently under contract to acquire a Manufacturing & Industrial firm in St. Louis. Additional information is expected later this summer as the transaction process advances.",
+    focus: "Manufacturing company in the St. Louis region.",
+    copy: "Inland Tide is currently under contract to acquire a Manufacturing company in St. Louis. Additional information can be revealed as soon as the transaction completes.",
     href: "",
   },
 ];
@@ -74,7 +74,7 @@ export default function PortfolioPage() {
                     Visit Website
                   </a>
                 ) : (
-                  <p className="mt-8 text-xs font-semibold uppercase tracking-[0.2em] gold-text">More information coming later summer</p>
+                  <p className="mt-8 text-xs font-semibold uppercase tracking-[0.2em] gold-text">More information coming mid summer</p>
                 )}
               </article>
             ))}

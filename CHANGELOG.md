@@ -14,6 +14,7 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
+- Updated Portfolio page copy to rename Moulding STL as Moulding St. Louis and revise the under-contract St. Louis manufacturing acquisition card.
 - Promoted “Acquisition Targets” into the main homepage section headline above the acquisition-opportunity paragraph.
 - Removed the homepage Acquisition Targets headline listing the three target sectors.
 - Darkened the homepage arch bridge hero blue overlay by approximately 25%.
