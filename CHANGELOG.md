@@ -15,6 +15,7 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
+- Simplified the under-contract portfolio coming-soon image to a clean brand-aligned graphic that only says “Coming Soon.”
 - Updated Portfolio page cards to display the Moulding St. Louis logo and a coming-soon visual for the under-contract manufacturing acquisition.
 - Updated Portfolio page copy to rename Moulding STL as Moulding St. Louis and revise the under-contract St. Louis manufacturing acquisition card.
 - Promoted “Acquisition Targets” into the main homepage section headline above the acquisition-opportunity paragraph.
