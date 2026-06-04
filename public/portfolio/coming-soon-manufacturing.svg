@@ -1,0 +1,19 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" rx="72" fill="#182C4E"/>
+  <rect x="40" y="40" width="1520" height="920" rx="54" fill="#10213D" stroke="#C29B4B" stroke-width="6"/>
+  <path d="M170 720H1430" stroke="#C29B4B" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+  <path d="M260 278H1340" stroke="#C29B4B" stroke-width="2" stroke-dasharray="18 22" opacity="0.42"/>
+  <path d="M260 390H1340" stroke="#C29B4B" stroke-width="2" stroke-dasharray="18 22" opacity="0.28"/>
+  <path d="M260 502H1340" stroke="#C29B4B" stroke-width="2" stroke-dasharray="18 22" opacity="0.2"/>
+  <circle cx="310" cy="274" r="78" fill="#C29B4B" opacity="0.16"/>
+  <circle cx="1290" cy="686" r="112" fill="#C29B4B" opacity="0.12"/>
+  <g opacity="0.16" stroke="#F8F4EA" stroke-width="26" stroke-linecap="round">
+    <path d="M426 622V425C426 366 474 318 533 318H632"/>
+    <path d="M746 622V425C746 366 794 318 853 318H952"/>
+    <path d="M1066 622V425C1066 366 1114 318 1173 318H1272"/>
+  </g>
+  <text x="800" y="208" text-anchor="middle" fill="#C29B4B" font-family="Arial, Helvetica, sans-serif" font-size="34" letter-spacing="10" font-weight="700">UNDER CONTRACT</text>
+  <text x="800" y="456" text-anchor="middle" fill="#F8F4EA" font-family="Georgia, 'Times New Roman', serif" font-size="104" font-weight="600">Coming Soon</text>
+  <text x="800" y="550" text-anchor="middle" fill="#F8F4EA" font-family="Arial, Helvetica, sans-serif" font-size="32" letter-spacing="7" font-weight="700" opacity="0.88">ST. LOUIS MANUFACTURING COMPANY</text>
+  <text x="800" y="780" text-anchor="middle" fill="#C29B4B" font-family="Arial, Helvetica, sans-serif" font-size="28" letter-spacing="8" font-weight="700">INLAND TIDE HOLDINGS</text>
+</svg>

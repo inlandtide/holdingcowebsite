@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Eyebrow, Footer, Header, PageIntro } from "../components/SiteChrome";
 
@@ -8,6 +9,9 @@ const portfolioItems = [
     focus: "St. Louis moulding & architectural finish solutions.",
     copy: "Moulding St. Louis is currently part of the Inland Tide portfolio, reflecting the firm’s interest in practical, service-driven businesses with durable local demand & opportunities for disciplined operational growth.",
     href: "https://mouldingstl.com/",
+    image: "/portfolio/moulding-st-louis-logo.webp",
+    imageAlt: "Moulding St. Louis logo",
+    imageMode: "contain",
   },
   {
     name: "Acquisition of a St. Louis Manufacturing Company",
@@ -15,6 +19,9 @@ const portfolioItems = [
     focus: "Manufacturing company in the St. Louis region.",
     copy: "Inland Tide is currently under contract to acquire a Manufacturing company in St. Louis. Additional information can be revealed as soon as the transaction completes.",
     href: "",
+    image: "/portfolio/coming-soon-manufacturing.svg",
+    imageAlt: "Coming soon graphic for the St. Louis manufacturing acquisition",
+    imageMode: "cover",
   },
 ];
 
@@ -64,6 +71,15 @@ export default function PortfolioPage() {
           <div className="mt-14 grid gap-8 lg:grid-cols-2">
             {portfolioItems.map((item) => (
               <article key={item.name} className="focus-card rounded-3xl p-8 md:p-10">
+                <div className="relative mb-8 flex h-56 items-center justify-center overflow-hidden rounded-2xl border bg-white" style={{ borderColor: "var(--tide-gold)" }}>
+                  <Image
+                    src={item.image}
+                    alt={item.imageAlt}
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className={item.imageMode === "contain" ? "object-contain p-6" : "object-cover"}
+                  />
+                </div>
                 <p className="text-xs uppercase tracking-[0.24em] gold-text">{item.status}</p>
                 <h3 className="brand-display mt-5 text-5xl font-semibold">{item.name}</h3>
                 <div className="gold-rule my-7 w-20" />
