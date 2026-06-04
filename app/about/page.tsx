@@ -1,16 +1,17 @@
+import Image from "next/image";
 import Link from "next/link";
-import { Eyebrow, Footer, Header, PageIntro } from "../components/SiteChrome";
+import { Eyebrow, Footer, Header } from "../components/SiteChrome";
 
 const leaders = [
   {
     name: "Tim Hebel",
-    title: "Operator & Investor",
+    title: "Managing Partner",
     bio: "Tim is dedicated to acquiring & scaling the businesses that form the backbone of the economy. After fourteen years as founder & owner of Beanstalk Web Solutions, which he led to a successful exit in 2026, Tim began a new chapter with Inland Tide Holdings: building a portfolio focused on long-term acquisitions & strategic growth.",
     perspective: "His career has been shaped by early adoption & technical depth, from studying Computer Science with an emphasis on AI to investing in Bitcoin in 2011. At Inland Tide, he applies that forward-looking lens to traditional, owner-operated businesses through modern systems, patient ownership, & a buy-&-hold philosophy.",
   },
   {
     name: "Ryan Hall",
-    title: "Operator & Partner",
+    title: "Managing Partner",
     bio: "Ryan was born & raised in St. Louis & now lives in Ballwin with his wife & two children. After serving five years as President of Beanstalk Web Solutions, he helped lead the company through a successful sale in early 2026 before launching Inland Tide Holdings with a focus on long-term acquisitions & strategic growth.",
     perspective: "Ryan brings a practical operator’s mindset to Inland Tide’s acquisitions, advisory work, & venture investments. Outside of work, his family spends time on the motocross track & exploring St. Louis, reinforcing the local roots that inform the firm’s long-term commitment to the region.",
   },
@@ -27,11 +28,27 @@ export default function AboutPage() {
   return (
     <main className="page-shell">
       <Header />
-      <PageIntro
-        eyebrow="About Inland Tide"
-        title="A holding company built by operators, not spectators."
-        copy="Inland Tide Holdings was formed in St. Louis by Tim Hebel & Ryan Hall to acquire, partner with, & invest in businesses where operational discipline & long-term alignment can create enduring value."
-      />
+      <section className="relative overflow-hidden px-6 pb-20 pt-44 md:px-10 md:pb-28 md:pt-52" style={{ background: "var(--inland-navy)" }}>
+        <Image
+          src="/brand/inland-tide-about-hero.webp"
+          alt="St. Louis skyline at night above Busch Stadium"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0" style={{ background: "rgba(24, 44, 78, 0.865)" }} />
+        <div className="relative z-10 mx-auto max-w-5xl text-center">
+          <Eyebrow>About Inland Tide</Eyebrow>
+          <h1 className="brand-display mt-6 text-5xl font-semibold leading-none tracking-wide md:text-7xl">
+            A holding company built by operators, not spectators.
+          </h1>
+          <div className="gold-rule mx-auto my-8 w-24" />
+          <p className="mx-auto max-w-3xl text-lg leading-8" style={{ color: "var(--parchment)" }}>
+            Inland Tide Holdings was formed in St. Louis by Tim Hebel & Ryan Hall to acquire, partner with, & invest in businesses where operational discipline & long-term alignment can create enduring value.
+          </p>
+        </div>
+      </section>
 
       <section className="light-section px-6 py-20 md:px-10 md:py-28">
         <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.85fr_1.15fr]">
