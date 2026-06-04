@@ -30,8 +30,8 @@ export default function AboutPage() {
       <Header />
       <section className="relative overflow-hidden px-6 pb-20 pt-44 md:px-10 md:pb-28 md:pt-52" style={{ background: "var(--inland-navy)" }}>
         <Image
-          src="/brand/inland-tide-about-hero.webp"
-          alt="St. Louis skyline at night above Busch Stadium"
+          src="/brand/inland-tide-about-hero-courthouse.webp"
+          alt="Gateway Arch and Old Courthouse in downtown St. Louis"
           fill
           priority
           sizes="100vw"

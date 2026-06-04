@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## [2026-05-21]
 ### Added
+- Added the uploaded Gateway Arch/Old Courthouse photo as the replacement About page hero background asset.
 - Added the uploaded Busch Stadium/night skyline image as the About page hero background asset.
 - Added the uploaded Moulding St. Louis logo and a branded coming-soon image for Portfolio page cards.
 - Added the uploaded arch bridge photo as a committed homepage hero background asset.
@@ -16,6 +17,7 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
+- Replaced the About page hero image with the uploaded Gateway Arch/Old Courthouse photo while keeping the same heavy blue overlay treatment.
 - Updated the About page hero with the uploaded Busch Stadium/night skyline image and the same heavy blue overlay treatment as the homepage.
 - Changed Tim Hebel and Ryan Hall’s leadership titles to Managing Partner.
 - Simplified the under-contract portfolio coming-soon image to a clean brand-aligned graphic that only says “Coming Soon.”
