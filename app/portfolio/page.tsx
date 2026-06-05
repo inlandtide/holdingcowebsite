@@ -50,8 +50,8 @@ export default function PortfolioPage() {
       <Header />
       <section className="relative overflow-hidden px-6 pb-20 pt-44 md:px-10 md:pb-28 md:pt-52" style={{ background: "var(--inland-navy)" }}>
         <Image
-          src="/brand/inland-tide-portfolio-hero-monument.webp"
-          alt="Equestrian monument in St. Louis"
+          src="/brand/inland-tide-portfolio-hero-downtown.webp"
+          alt="Downtown St. Louis skyline with Old Courthouse and Busch Stadium"
           fill
           priority
           sizes="100vw"

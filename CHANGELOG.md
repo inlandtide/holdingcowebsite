@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## [2026-05-21]
 ### Added
+- Added the uploaded downtown St. Louis photo as the replacement Portfolio page hero background asset.
 - Added the uploaded monument photo as the Portfolio page hero background asset.
 - Added the uploaded Gateway Arch/Old Courthouse photo as the replacement About page hero background asset.
 - Added the uploaded Busch Stadium/night skyline image as the About page hero background asset.
@@ -18,6 +19,7 @@ All notable changes to this project will be documented in this file.
 - Added the uploaded Inland Tide hero artwork to `/public/brand` for the homepage hero.
 
 ### Changed
+- Replaced the Portfolio page hero image with the uploaded downtown St. Louis photo while keeping the same full-bleed heavy blue overlay treatment as the Home and About pages.
 - Switched the Portfolio page monument hero to the same full-bleed object-cover background treatment used by the other hero images.
 - Updated the Portfolio page hero with the uploaded monument photo, using the same heavy blue overlay and object-contain positioning so the full monument remains visible.
 - Replaced the About page hero image with the uploaded Gateway Arch/Old Courthouse photo while keeping the same heavy blue overlay treatment.
