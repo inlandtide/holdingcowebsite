@@ -12,16 +12,18 @@ const portfolioItems = [
     image: "/portfolio/moulding-st-louis-logo.webp",
     imageAlt: "Moulding St. Louis logo",
     imageMode: "contain",
+    visual: "image",
   },
   {
-    name: "Acquisition of a St. Louis Manufacturing Company",
-    status: "Under Contract",
-    focus: "Manufacturing company in the St. Louis region.",
-    copy: "Inland Tide is currently under contract to acquire a Manufacturing company in St. Louis. Additional information can be revealed as soon as the transaction completes.",
-    href: "",
+    name: "CKC Woodworks",
+    status: "Current Portfolio Company",
+    focus: "A St. Louis, union-based woodshop with 40+ years of experience.",
+    copy: "CKC Woodworks is a longstanding architectural woodwork & millwork business, bringing skilled craftsmanship, a dedicated union team, & a durable local presence to the Inland Tide portfolio.",
+    href: "https://ckcwoodworks.com/",
     image: "/portfolio/coming-soon-manufacturing.svg",
-    imageAlt: "Coming soon graphic for the St. Louis manufacturing acquisition",
-    imageMode: "cover",
+    imageAlt: "CKC Woodworks",
+    imageMode: "contain",
+    visual: "ckc",
   },
 ];
 
@@ -87,15 +89,24 @@ export default function PortfolioPage() {
           <div className="mt-14 grid gap-8 lg:grid-cols-2">
             {portfolioItems.map((item) => (
               <article key={item.name} className="focus-card rounded-3xl p-8 md:p-10">
-                <div className="relative mb-8 flex h-56 items-center justify-center overflow-hidden rounded-2xl border bg-white" style={{ borderColor: "var(--tide-gold)" }}>
-                  <Image
-                    src={item.image}
-                    alt={item.imageAlt}
-                    fill
-                    sizes="(min-width: 1024px) 50vw, 100vw"
-                    className={item.imageMode === "contain" ? "object-contain p-6" : "object-cover"}
-                  />
-                </div>
+                {item.visual === "ckc" ? (
+                  <div className="relative mb-8 flex h-56 flex-col items-center justify-center overflow-hidden rounded-2xl border text-center" style={{ background: "var(--inland-navy)", borderColor: "var(--tide-gold)" }}>
+                    <div className="absolute inset-0 opacity-40" style={{ background: "radial-gradient(circle at 50% 0%, rgba(201, 168, 76, 0.28), transparent 60%)" }} />
+                    <p className="relative brand-display text-6xl font-semibold tracking-[0.12em] text-white md:text-7xl">CKC</p>
+                    <div className="relative mt-3 h-px w-24" style={{ background: "var(--tide-gold)" }} />
+                    <p className="relative mt-3 text-xs font-semibold uppercase tracking-[0.34em]" style={{ color: "var(--tide-gold)" }}>Woodworks</p>
+                  </div>
+                ) : (
+                  <div className="relative mb-8 flex h-56 items-center justify-center overflow-hidden rounded-2xl border bg-white" style={{ borderColor: "var(--tide-gold)" }}>
+                    <Image
+                      src={item.image}
+                      alt={item.imageAlt}
+                      fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
+                      className={item.imageMode === "contain" ? "object-contain p-6" : "object-cover"}
+                    />
+                  </div>
+                )}
                 <p className="text-xs uppercase tracking-[0.24em] gold-text">{item.status}</p>
                 <h3 className="brand-display mt-5 text-5xl font-semibold">{item.name}</h3>
                 <div className="gold-rule my-7 w-20" />
