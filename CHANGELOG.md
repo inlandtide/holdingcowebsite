@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## [2026-10-02]
 ### Changed
 - Replaced the Portfolio page’s under-contract coming-soon card with CKC Woodworks, including its St. Louis union-based 40+ year woodshop profile, website link, & a brand-aligned visual treatment.
+- Removed the legacy coming-soon rendering path from Portfolio page entries.
 
 ## [2026-05-21]
 ### Added

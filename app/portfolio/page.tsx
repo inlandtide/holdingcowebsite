@@ -2,7 +2,25 @@ import Image from "next/image";
 import Link from "next/link";
 import { Eyebrow, Footer, Header } from "../components/SiteChrome";
 
-const portfolioItems = [
+type PortfolioItem = {
+  name: string;
+  status: string;
+  focus: string;
+  copy: string;
+  href: string;
+} & (
+  | {
+      visual: "image";
+      image: string;
+      imageAlt: string;
+      imageMode: "contain" | "cover";
+    }
+  | {
+      visual: "ckc";
+    }
+);
+
+const portfolioItems: PortfolioItem[] = [
   {
     name: "Moulding St. Louis",
     status: "Current Portfolio Company",
@@ -20,9 +38,6 @@ const portfolioItems = [
     focus: "A St. Louis, union-based woodshop with 40+ years of experience.",
     copy: "CKC Woodworks is a longstanding architectural woodwork & millwork business, bringing skilled craftsmanship, a dedicated union team, & a durable local presence to the Inland Tide portfolio.",
     href: "https://ckcwoodworks.com/",
-    image: "/portfolio/coming-soon-manufacturing.svg",
-    imageAlt: "CKC Woodworks",
-    imageMode: "contain",
     visual: "ckc",
   },
 ];
@@ -112,13 +127,9 @@ export default function PortfolioPage() {
                 <div className="gold-rule my-7 w-20" />
                 <p className="text-base font-semibold leading-7" style={{ color: "var(--inland-navy)" }}>{item.focus}</p>
                 <p className="mt-5 text-base leading-8 slate-text">{item.copy}</p>
-                {item.href ? (
-                  <a href={item.href} target="_blank" rel="noreferrer" className="mt-8 inline-flex rounded-full border px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em]" style={{ borderColor: "var(--tide-gold)", color: "var(--inland-navy)" }}>
-                    Visit Website
-                  </a>
-                ) : (
-                  <p className="mt-8 text-xs font-semibold uppercase tracking-[0.2em] gold-text">More information coming mid summer</p>
-                )}
+                <a href={item.href} target="_blank" rel="noreferrer" className="mt-8 inline-flex rounded-full border px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em]" style={{ borderColor: "var(--tide-gold)", color: "var(--inland-navy)" }}>
+                  Visit Website
+                </a>
               </article>
             ))}
           </div>
