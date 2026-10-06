@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { MobileNavigation } from "./MobileNavigation";
 
 const navigation = [
   { href: "/", label: "Home" },
@@ -37,6 +38,7 @@ export function Header() {
         >
           Share an Opportunity
         </Link>
+        <MobileNavigation items={navigation} />
       </div>
     </header>
   );

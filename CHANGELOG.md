@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2026-10-06]
+### Added
+- Added an accessible, brand-aligned hamburger menu for mobile navigation, including page links, the Share an Opportunity call to action, tap-to-close behavior, and Escape-key support.
+
 ## [2026-10-02]
 ### Changed
 - Replaced the Portfolio page’s under-contract coming-soon card with CKC Woodworks, including its St. Louis union-based 40+ year woodshop profile, website link, & a brand-aligned visual treatment.
