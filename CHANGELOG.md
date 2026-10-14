@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2026-10-13]
+### Changed
+- Replaced the homepage hero background with the uploaded Gateway Arch & downtown St. Louis riverfront image while retaining the existing full-bleed, heavy Inland Navy overlay treatment.
+
 ## [2026-10-06]
 ### Added
 - Added an accessible, brand-aligned hamburger menu for mobile navigation, including page links, the Share an Opportunity call to action, tap-to-close behavior, and Escape-key support.
