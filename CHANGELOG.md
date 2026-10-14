@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 - Replaced the homepage hero background with the uploaded Gateway Arch & downtown St. Louis riverfront image while retaining the existing full-bleed, heavy Inland Navy overlay treatment.
 - Restored the supplied hero image to a higher-resolution asset & changed the presentation to preserve the complete Arch and skyline instead of aggressively cropping the image.
+- Replaced the interim contained hero treatment with the newly uploaded Gateway Arch riverfront image, restored at high resolution and presented full-bleed without empty side space.
 
 ## [2026-10-06]
 ### Added
