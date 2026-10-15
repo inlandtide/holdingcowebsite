@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2026-10-15]
+### Changed
+- Updated the CKC Woodworks Portfolio card with the supplied primary & inverted logo assets, the CKC Dark Olive, Bone, & Aged Copper palette, and Source Sans 3 details typography in accordance with the supplied brand guidelines.
+
 ## [2026-10-13]
 ### Changed
 - Replaced the homepage hero background with the uploaded Gateway Arch & downtown St. Louis riverfront image while retaining the existing full-bleed, heavy Inland Navy overlay treatment.

@@ -58,6 +58,10 @@ textarea {
   font-family: var(--font-display);
 }
 
+.ckc-body {
+  font-family: var(--font-source-sans), "Source Sans 3", Helvetica, Arial, sans-serif;
+}
+
 .body-copy {
   font-family: var(--font-body);
 }

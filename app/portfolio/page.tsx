@@ -17,6 +17,8 @@ type PortfolioItem = {
     }
   | {
       visual: "ckc";
+      image: string;
+      imageAlt: string;
     }
 );
 
@@ -38,6 +40,8 @@ const portfolioItems: PortfolioItem[] = [
     focus: "A St. Louis, union-based woodshop with 40+ years of experience.",
     copy: "CKC Woodworks is a longstanding architectural woodwork & millwork business, bringing skilled craftsmanship, a dedicated union team, & a durable local presence to the Inland Tide portfolio.",
     href: "https://ckcwoodworks.com/",
+    image: "/portfolio/ckc-woodworks-stacked-primary-aged-copper.svg",
+    imageAlt: "CKC Woodworks primary logo",
     visual: "ckc",
   },
 ];
@@ -103,13 +107,20 @@ export default function PortfolioPage() {
 
           <div className="mt-14 grid gap-8 lg:grid-cols-2">
             {portfolioItems.map((item) => (
-              <article key={item.name} className="focus-card rounded-3xl p-8 md:p-10">
+              <article
+                key={item.name}
+                className={item.visual === "ckc" ? "rounded-3xl border p-8 md:p-10" : "focus-card rounded-3xl p-8 md:p-10"}
+                style={item.visual === "ckc" ? { background: "#E3D6BD", borderColor: "#A65D46", color: "#3B3A22" } : undefined}
+              >
                 {item.visual === "ckc" ? (
-                  <div className="relative mb-8 flex h-56 flex-col items-center justify-center overflow-hidden rounded-2xl border text-center" style={{ background: "var(--inland-navy)", borderColor: "var(--tide-gold)" }}>
-                    <div className="absolute inset-0 opacity-40" style={{ background: "radial-gradient(circle at 50% 0%, rgba(201, 168, 76, 0.28), transparent 60%)" }} />
-                    <p className="relative brand-display text-6xl font-semibold tracking-[0.12em] text-white md:text-7xl">CKC</p>
-                    <div className="relative mt-3 h-px w-24" style={{ background: "var(--tide-gold)" }} />
-                    <p className="relative mt-3 text-xs font-semibold uppercase tracking-[0.34em]" style={{ color: "var(--tide-gold)" }}>Woodworks</p>
+                  <div className="relative mb-8 h-64 overflow-hidden rounded-2xl border" style={{ background: "#E3D6BD", borderColor: "#A65D46" }}>
+                    <Image
+                      src={item.image}
+                      alt={item.imageAlt}
+                      fill
+                      sizes="(min-width: 1024px) 50vw, 100vw"
+                      className="object-contain p-6"
+                    />
                   </div>
                 ) : (
                   <div className="relative mb-8 flex h-56 items-center justify-center overflow-hidden rounded-2xl border bg-white" style={{ borderColor: "var(--tide-gold)" }}>
@@ -122,12 +133,12 @@ export default function PortfolioPage() {
                     />
                   </div>
                 )}
-                <p className="text-xs uppercase tracking-[0.24em] gold-text">{item.status}</p>
-                <h3 className="brand-display mt-5 text-5xl font-semibold">{item.name}</h3>
-                <div className="gold-rule my-7 w-20" />
-                <p className="text-base font-semibold leading-7" style={{ color: "var(--inland-navy)" }}>{item.focus}</p>
-                <p className="mt-5 text-base leading-8 slate-text">{item.copy}</p>
-                <a href={item.href} target="_blank" rel="noreferrer" className="mt-8 inline-flex rounded-full border px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em]" style={{ borderColor: "var(--tide-gold)", color: "var(--inland-navy)" }}>
+                <p className={item.visual === "ckc" ? "ckc-body text-xs font-semibold uppercase tracking-[0.24em]" : "text-xs uppercase tracking-[0.24em] gold-text"} style={item.visual === "ckc" ? { color: "#A65D46" } : undefined}>{item.status}</p>
+                <h3 className="brand-display mt-5 text-5xl font-semibold" style={item.visual === "ckc" ? { color: "#3B3A22" } : undefined}>{item.name}</h3>
+                <div className="my-7 h-px w-20" style={{ background: item.visual === "ckc" ? "#A65D46" : "var(--tide-gold)" }} />
+                <p className={item.visual === "ckc" ? "ckc-body text-base font-semibold leading-7" : "text-base font-semibold leading-7"} style={{ color: item.visual === "ckc" ? "#3B3A22" : "var(--inland-navy)" }}>{item.focus}</p>
+                <p className={item.visual === "ckc" ? "ckc-body mt-5 text-base leading-8" : "mt-5 text-base leading-8 slate-text"} style={item.visual === "ckc" ? { color: "#3B3A22" } : undefined}>{item.copy}</p>
+                <a href={item.href} target="_blank" rel="noreferrer" className={item.visual === "ckc" ? "ckc-body mt-8 inline-flex rounded-full border px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em]" : "mt-8 inline-flex rounded-full border px-6 py-3 text-xs font-semibold uppercase tracking-[0.2em]"} style={{ borderColor: item.visual === "ckc" ? "#A65D46" : "var(--tide-gold)", color: item.visual === "ckc" ? "#3B3A22" : "var(--inland-navy)" }}>
                   Visit Website
                 </a>
               </article>
