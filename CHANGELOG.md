@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ## [2026-10-15]
 ### Changed
 - Updated the CKC Woodworks Portfolio card with the supplied primary & inverted logo assets, the CKC Dark Olive, Bone, & Aged Copper palette, and Source Sans 3 details typography in accordance with the supplied brand guidelines.
+- Matched the CKC Woodworks card geometry and white logo panel to the Moulding St. Louis card while retaining CKC’s supplied logo & brand text colors.
 
 ## [2026-10-13]
 ### Changed

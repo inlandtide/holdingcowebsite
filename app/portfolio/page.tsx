@@ -109,11 +109,11 @@ export default function PortfolioPage() {
             {portfolioItems.map((item) => (
               <article
                 key={item.name}
-                className={item.visual === "ckc" ? "rounded-3xl border p-8 md:p-10" : "focus-card rounded-3xl p-8 md:p-10"}
-                style={item.visual === "ckc" ? { background: "#E3D6BD", borderColor: "#A65D46", color: "#3B3A22" } : undefined}
+                className="focus-card rounded-3xl p-8 md:p-10"
+                style={item.visual === "ckc" ? { borderColor: "#A65D46", color: "#3B3A22" } : undefined}
               >
                 {item.visual === "ckc" ? (
-                  <div className="relative mb-8 h-64 overflow-hidden rounded-2xl border" style={{ background: "#E3D6BD", borderColor: "#A65D46" }}>
+                  <div className="relative mb-8 flex h-56 items-center justify-center overflow-hidden rounded-2xl border bg-white" style={{ borderColor: "#A65D46" }}>
                     <Image
                       src={item.image}
                       alt={item.imageAlt}
